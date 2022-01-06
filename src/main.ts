@@ -1,8 +1,6 @@
-import App from './App.svelte';
+import App from "./App.svelte";
 
 export default new App({
-	target: document.body,
-	props: { name: 'world'
-	}
+  target: document.body,
+  props: { name: "world" },
 });
-
