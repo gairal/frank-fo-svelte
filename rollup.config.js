@@ -40,11 +40,23 @@ export default {
 	},
 	plugins: [
 		svelte({
-			preprocess: sveltePreprocess({ sourceMap: !production }),
 			compilerOptions: {
 				// enable run-time checks when not in production
 				dev: !production
-			}
+			},
+			onwarn: (warning, handler) => {
+        if (warning.code === "css-unused-selector") {
+					// disable this warning since we're using Tailwind that already takes care of this
+					return;
+				}
+
+        handler(warning);
+			},
+			preprocess: sveltePreprocess({ sourceMap: !production,
+				postcss: {
+					plugins: [require('tailwindcss')(), require('autoprefixer')()],
+				},
+			}),
 		}),
 		// we'll extract any component CSS out into
 		// a separate file - better for performance
