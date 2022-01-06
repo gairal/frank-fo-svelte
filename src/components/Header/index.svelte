@@ -1,0 +1,19 @@
+<script lang="ts">
+  import { Link } from "svelte-routing";
+
+  import More from "../icons/More.svelte";
+</script>
+
+<header
+  class="w-full h-24 rounded-2xl mx-auto mb-8 flex items-center px-8 font-mono text-white border-4 border-purple-200 border-neon"
+>
+  <h1 class="text-3xl font-black text-neon flex-1">work</h1>
+  <nav>
+    <Link to="/">Work</Link>
+    <Link to="education">Education</Link>
+  </nav>
+  <More />
+</header>
+
+<style>
+</style>

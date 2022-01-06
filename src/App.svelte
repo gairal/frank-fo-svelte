@@ -1,10 +1,16 @@
 <script lang="ts">
-  import Header from "./components/Header.svelte";
+  import { Router } from "svelte-routing";
+
+  import Header from "./components/Header/index.svelte";
   import Main from "./components/Main.svelte";
+
+  // export let url = "";
 </script>
 
-<Header />
-<Main />
+<Router>
+  <Header />
+  <Main />
+</Router>
 
 <style global lang="postcss">
   @tailwind base;
