@@ -2,13 +2,11 @@
   // export let name: string;
 </script>
 
-<header class="w-full rounded-2xl text-white mx-auto p-4 mb-8">
-  <h1 class="text-3xl font-black">work</h1>
+<header
+  class="w-full h-24 rounded-2xl mx-auto mb-8 flex items-center px-8 font-mono text-white border-4 border-purple-200 border-neon"
+>
+  <h1 class="text-3xl font-black text-neon">work</h1>
 </header>
 
 <style>
-  header {
-    @apply bg-purple-900;
-    box-shadow: 29px 29px 57px #4b1873, -29px -29px 57px #65209b;
-  }
 </style>

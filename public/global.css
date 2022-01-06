@@ -7,7 +7,17 @@ body {
 
 body {
   padding: 2rem;
-  /* background-image: linear-gradient(#a855f7, #ec4899); */
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.text-neon {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #5271ff,
+    0 0 82px #5271ff, 0 0 92px #5271ff, 0 0 102px #5271ff, 0 0 151px #5271ff;
+}
+
+.border-neon {
+  box-shadow: 0 0 1px #d8b4fe, 0 0 2px #d8b4fe, 0 0 6px #d8b4fe,
+    0 0 12px #d8b4fe, inset 0 0 1px #d8b4fe, inset 0 0 2px #d8b4fe,
+    inset 0 0 6px #d8b4fe, inset 0 0 12px #d8b4fe;
 }
