@@ -1,13 +1,13 @@
 <script lang="ts">
-	export let name: string;
+  import Header from "./components/Header.svelte";
+  import Main from "./components/Main.svelte";
 </script>
 
-<main>
-	<h1 class="text-red-50">Hello {name}!</h1>
-</main>
+<Header />
+<Main />
 
-<style>
-	@tailwind base;
+<style global lang="postcss">
+  @tailwind base;
   @tailwind components;
   @tailwind utilities;
 </style>
