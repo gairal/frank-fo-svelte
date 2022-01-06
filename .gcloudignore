@@ -1,0 +1,9 @@
+.github
+.husky
+.vscode
+dist
+test
+.env.example
+.eslintignore
+.eslintrc.js
+jest.config.js
