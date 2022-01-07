@@ -7,3 +7,4 @@
 [] find nice font
 [] updated CV
 [] add PWA
+[] edit title
