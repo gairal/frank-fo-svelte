@@ -3,8 +3,6 @@
 
   import Header from "./components/Header/index.svelte";
   import Main from "./components/Main.svelte";
-
-  // export let url = "";
 </script>
 
 <Router>

@@ -8,6 +8,16 @@ module.exports = {
         "import/no-mutable-exports": 0,
       },
     },
+    {
+      files: ["*.config.js"],
+      rules: {
+        "import/extensions": 0,
+        "import/no-extraneous-dependencies": [
+          "error",
+          { devDependencies: true },
+        ],
+      },
+    },
   ],
   plugins: ["svelte3", "no-only-tests", "typescript-sort-keys"],
   rules: {
@@ -42,7 +52,7 @@ module.exports = {
     "no-only-tests/no-only-tests": 2,
   },
   settings: {
-    // eslint-disable-next-line global-require
+    // eslint-disable-next-line global-require,import/no-extraneous-dependencies
     "svelte3/typescript": require("typescript"),
     // ignore style tags in Svelte because of Tailwind CSS
     // See https://github.com/sveltejs/eslint-plugin-svelte3/issues/70

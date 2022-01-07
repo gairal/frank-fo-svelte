@@ -1,14 +1,14 @@
 runtime: nodejs16
 
 handlers:
-  - url: /build
-    static_dir: public/build
+  - url: /assets
+    static_dir: dist/assets
   - url: /img
-    static_dir: public/img
+    static_dir: dist/img
   - url: /(.*\..+)$
-    static_files: public/\1
-    upload: public/(.*\..+)$
+    static_files: dist/\1
+    upload: dist/(.*\..+)$
   - url: /(.*)
     secure: always
-    static_files: public/index.html
-    upload: public/index.html
+    static_files: dist/index.html
+    upload: dist/index.html
