@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+@import "variables";
+
+html,
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  padding: 2rem;
+}
+
+.border-neon {
+  box-shadow: 0 0 1px $purple-300, 0 0 2px $purple-300, 0 0 6px $purple-300,
+    0 0 12px $purple-300, inset 0 0 1px $purple-300, inset 0 0 2px $purple-300,
+    inset 0 0 6px $purple-300, inset 0 0 12px $purple-300;
+}
+
+.text-neon {
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px $purple-90,
+    0 0 82px $purple-90, 0 0 92px $purple-90, 0 0 102px $purple-90,
+    0 0 151px $purple-90;
+}
+
+.nav-link {
+  box-shadow: 5px 5px 10px #5d217b, -5px -5px 10px #7d2da7;
+}
+
+.nav-link:hover {
+  background: linear-gradient(145deg, #622383, #752a9b);
+  box-shadow: 5px 5px 10px #5d217b, -5px -5px 10px #7d2da7;
+}
+
+.nav-link:active {
+  box-shadow: inset 5px 5px 10px #5d217b, inset -5px -5px 10px #7d2da7;
+}
+
+.nav-link--active {
+  background-color: #f472b6;
+  box-shadow: inset 5px 5px 10px #cf619b, inset -5px -5px 10px #ff83d1;
+}
