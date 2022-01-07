@@ -9,9 +9,9 @@
   "scripts": {
     "build": "vite build",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "deploy": "gcloud app deploy --project com-gairal-frank-22",
+    "deploy": "yarn build && gcloud app deploy --project com-gairal-frank-22",
     "dev": "vite",
-    "gcp-build": "npm run build",
+    "gcp-build": "yarn build",
     "lint": "eslint . --ext .js,.ts,.svelte",
     "prepare": "husky install",
     "preview": "vite preview",
