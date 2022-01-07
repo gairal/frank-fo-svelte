@@ -7,15 +7,15 @@
   "private": true,
   "scripts": {
     "build": "rollup -c",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
     "deploy": "gcloud app deploy --project com-gairal-frank-22",
+    "dev": "rollup -c -w",
     "gcp-build": "npm run build",
     "lint": "eslint . --ext .js,.ts,.svelte",
     "prepare": "husky install",
     "start": "sirv public --no-clear",
-    "test": "LOG_LEVEL=error jest",
     "test-cov": "yarn test --collectCoverage",
-    "watch": "rollup -c -w",
-    "check": "svelte-check --tsconfig ./tsconfig.json"
+    "test": "LOG_LEVEL=error jest"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "^17.0.0",
