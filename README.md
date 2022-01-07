@@ -6,3 +6,4 @@
 [] gAnalytics
 [] find nice font
 [] updated CV
+[] add PWA
