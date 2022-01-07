@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./public/index.html", "./src/**/*.svelte"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cursive: ['"Pacifico"', "cursive"],
+      },
+    },
   },
   plugins: [],
 };

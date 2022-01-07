@@ -6,7 +6,7 @@
 </script>
 
 <main
-  class="w-full rounded-2xl text-white mx-auto p-4 border-2 border-purple-200 border-neon"
+  class="w-full rounded-2xl font-mono text-white mx-auto p-4 border-2 border-purple-200 border-neon"
 >
   <Route path="education" component={Education} />
   <Route path="/"><Work /></Route>
