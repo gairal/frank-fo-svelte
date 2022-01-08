@@ -1,11 +1,7 @@
 <script lang="ts">
-  import { slide } from "svelte/transition";
-  import { quintOut } from "svelte/easing";
-
-  import Link from "./Link.svelte";
   import Menu from "./Menu.svelte";
   import More from "./More.svelte";
-  import { title } from "../stores";
+  import { title } from "../../stores";
   import Nav from "./Nav.svelte";
 
   let expanded = false;
