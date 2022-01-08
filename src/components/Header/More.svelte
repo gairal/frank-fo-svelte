@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
   import MoreIcon from "../icons/MoreIcon.svelte";
 </script>
 
