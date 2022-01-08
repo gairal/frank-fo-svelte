@@ -4,11 +4,11 @@
 
   export let to: string;
 
-  const getProps = ({ isCurrent }: GetPropsParams) => ({
+  const handleGetProps = ({ isCurrent }: GetPropsParams) => ({
     class: `flex justify-center item-center p-3 rounded-xl bg-purple-900 nav-link${
       isCurrent ? " nav-link--active" : ""
     }`,
   });
 </script>
 
-<Link {to} {getProps}><slot /></Link>
+<Link {to} getProps={handleGetProps}><slot /></Link>
