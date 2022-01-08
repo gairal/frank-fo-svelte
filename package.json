@@ -33,7 +33,6 @@
     "eslint-plugin-typescript-sort-keys": "^2.1.0",
     "husky": "^7.0.4",
     "jest": "^27.4.6",
-    "lint-staged": "^12.1.7",
     "npm": "^8.3.0",
     "postcss": "^8.4.5",
     "prettier": "^2.5.1",
@@ -52,8 +51,8 @@
     "svelte-routing": "^1.6.0"
   },
   "lint-staged": {
-    "*.{js,cjs,ts}": [
-      "eslint --fix"
+    "*.{js,cjs,ts,svelte}": [
+      "eslint --cache --fix"
     ],
     "*.{json,scss,css,md}": [
       "prettier --write"
