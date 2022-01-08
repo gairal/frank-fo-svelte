@@ -6,6 +6,7 @@ module.exports = {
       processor: "svelte3/svelte3",
       rules: {
         "import/no-mutable-exports": 0,
+        "prettier/prettier": 1,
       },
     },
     {
