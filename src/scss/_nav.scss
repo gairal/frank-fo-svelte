@@ -1,0 +1,14 @@
+.nav-link {
+  box-shadow: 5px 5px 10px #5d217b, -5px -5px 10px #7d2da7;
+
+  &:hover {
+    background: linear-gradient(145deg, #622383, #752a9b);
+    box-shadow: 5px 5px 10px #5d217b, -5px -5px 10px #7d2da7;
+  }
+
+  &.nav-link--active,
+  &.nav-link--active:hover {
+    background-color: #f472b6;
+    box-shadow: inset 5px 5px 10px #cf619b, inset -5px -5px 10px #ff83d1;
+  }
+}
