@@ -5,8 +5,10 @@ module.exports = {
       files: ["*.svelte"],
       processor: "svelte3/svelte3",
       rules: {
+        "import/first": 0,
+        "import/no-duplicates": 0,
         "import/no-mutable-exports": 0,
-        "prettier/prettier": 1,
+        "prettier/prettier": 0,
       },
     },
     {
@@ -53,8 +55,7 @@ module.exports = {
     "no-only-tests/no-only-tests": 2,
   },
   settings: {
-    // eslint-disable-next-line global-require,import/no-extraneous-dependencies
-    "svelte3/typescript": require("typescript"),
+    "svelte3/typescript": true,
     // ignore style tags in Svelte because of Tailwind CSS
     // See https://github.com/sveltejs/eslint-plugin-svelte3/issues/70
     "svelte3/ignore-styles": () => true,

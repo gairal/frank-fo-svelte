@@ -6,7 +6,9 @@
 
   let expanded = false;
 
-  const handleClick = () => (expanded = !expanded);
+  const handleClick = () => {
+    expanded = !expanded;
+  };
 </script>
 
 <header
