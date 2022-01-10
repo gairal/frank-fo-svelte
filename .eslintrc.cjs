@@ -22,42 +22,49 @@ module.exports = {
       },
     },
   ],
-  plugins: ["svelte3", "no-only-tests", "typescript-sort-keys"],
+  plugins: [
+    "svelte3",
+    "no-only-tests",
+    "typescript-sort-keys",
+    "eslint-plugin-sort-keys-fix",
+  ],
   rules: {
     "@typescript-eslint/naming-convention": [
       "error",
       {
-        selector: "default",
         format: [],
+        selector: "default",
         trailingUnderscore: "forbid",
       },
       {
-        selector: "enumMember",
         format: ["PascalCase"],
+        selector: "enumMember",
       },
       {
-        selector: "typeLike",
         format: ["PascalCase"],
+        selector: "typeLike",
       },
     ],
     "import/order": [
       "error",
       {
-        "newlines-between": "always",
         groups: [
           "builtin",
           "external",
           ["internal", "parent", "sibling", "index"],
         ],
+        "newlines-between": "always",
       },
     ],
     "import/prefer-default-export": 0,
     "no-only-tests/no-only-tests": 2,
+    "sort-keys-fix/sort-keys-fix": 1,
   },
   settings: {
-    "svelte3/typescript": true,
     // ignore style tags in Svelte because of Tailwind CSS
     // See https://github.com/sveltejs/eslint-plugin-svelte3/issues/70
     "svelte3/ignore-styles": () => true,
+
+    "svelte3/typescript": true,
   },
 };
