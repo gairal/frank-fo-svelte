@@ -1,11 +1,11 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import { title } from "../stores";
+  import { title } from "../../stores";
 
   onMount(() => {
-    title.set("Work");
+    title.set("Education");
   });
 </script>
 
-<div>WORK</div>
+<div>EDUT</div>
