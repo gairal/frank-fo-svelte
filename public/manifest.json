@@ -1,9 +1,7 @@
 {
-  "name": "Frank Gairal",
-  "short_name": "frank g.",
+  "background_color": "#fff",
   "description": "Frank Gairal online C.V. looking for a position full-stack engineer in Paris",
-  "version": "5.0.0",
-  "manifest_version": 2,
+  "display": "standalone",
   "icons": [
     {
       "src": "/img/icons/icon_128.png",
@@ -16,12 +14,16 @@
       "type": "image/png"
     },
     {
+      "purpose": "any maskable",
       "src": "/img/icons/icon_512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
   ],
+  "manifest_version": 2,
+  "name": "Frank Gairal",
+  "short_name": "frank g.",
+  "start_url": "https://frank.gairal.rocks/",
   "theme_color": "#ec4899",
-  "background_color": "#fff",
-  "display": "standalone"
+  "version": "5.0.0"
 }
