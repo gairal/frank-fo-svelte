@@ -1,6 +1,7 @@
 <script lang="ts">
   import ClickOutside from "svelte-click-outside";
 
+  import BuildIcon from "../icons/BuildIcon.svelte";
   import EmailIcon from "../icons/EmailIcon.svelte";
   import LinkIcon from "../icons/LinkIcon.svelte";
   import MoreIcon from "../icons/MoreIcon.svelte";
@@ -59,6 +60,11 @@
           title="CV"
           tabindex="-1"><ResumeIcon class="fill-current" fill="" />resume.pdf</a
         >
+      </li>
+      <li
+        class="flex w-full p-3 justify-between hover:text-pink-400 border-t border-t-pink-400"
+      >
+        <BuildIcon class="fill-current" fill="" />v5.0.0-svelte
       </li>
     </ul></ClickOutside
   >
