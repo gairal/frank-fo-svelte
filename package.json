@@ -47,6 +47,7 @@
   },
   "dependencies": {
     "svelte": "^3.0.0",
+    "svelte-click-outside": "^1.0.0",
     "svelte-routing": "^1.6.0"
   },
   "lint-staged": {
