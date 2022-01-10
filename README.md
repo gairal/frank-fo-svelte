@@ -4,7 +4,8 @@
 
 [] delete old google cloud project
 [] gAnalytics
-[] find nice font
-[] updated CV
+[] updated CV pdf
 [] add PWA
-[] edit title
+[] neon favicon
+[] pulsate animation on the title
+[] bg on "frank g." add on top of the header border
