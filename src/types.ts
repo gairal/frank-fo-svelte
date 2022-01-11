@@ -3,6 +3,7 @@ export interface Education {
   dateOut: Date;
   diploma: string;
   extra?: string;
+  image: string;
   name: string;
   place: string;
   shortDescription: string;
