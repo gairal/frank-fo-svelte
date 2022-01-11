@@ -8,6 +8,11 @@ import type { Education, Interest, Skill, Travel, Work } from "./types";
 export const title = writable("");
 
 /**
+ * Google Maps
+ */
+export const isMapReady = writable(false);
+
+/**
  * service results
  */
 export const educations = writable<Education[]>([]);

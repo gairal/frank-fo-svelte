@@ -14,9 +14,9 @@
 </script>
 
 {#each $skills as skill}
-  <div>
+  <section>
     {skill.label}
-  </div>
+  </section>
 {:else}
   <progress />
 {/each}

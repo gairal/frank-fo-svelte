@@ -2,7 +2,8 @@
   import { onMount } from "svelte";
 
   import { fetchData } from "../../fetch";
-  import { interests, title, travels } from "../../stores";
+  import { interests, isMapReady, title, travels } from "../../stores";
+  import Map from "../Map.svelte";
 
   onMount(() => {
     title.set("Interests");
@@ -16,10 +17,13 @@
   });
 </script>
 
-{#each $travels as travel}
-  <div>
-    {travel.place}
-  </div>
-{:else}
-  <progress />
-{/each}
+{#if $isMapReady}<Map />{/if}
+<section class="p-4">
+  {#each $travels as travel}
+    <span>
+      {travel.place}
+    </span>
+  {:else}
+    <progress />
+  {/each}
+</section>

@@ -13,4 +13,10 @@
   });
 </script>
 
-<div>WORK</div>
+{#each $works as work}
+  <section>
+    {work.name}
+  </section>
+{:else}
+  <progress />
+{/each}
