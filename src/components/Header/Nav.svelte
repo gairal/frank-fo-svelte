@@ -6,10 +6,12 @@
 
   let className: string;
   export { className as class };
+  export let onClick: () => void = () => undefined;
 </script>
 
 <nav
-  class=" {className}"
+  class={className}
+  on:click={onClick}
   transition:slide={{ duration: 300, easing: quintOut }}
 >
   <Link to="/">Work</Link>

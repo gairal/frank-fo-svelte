@@ -1,13 +1,13 @@
 <script lang="ts">
   import MenuIcon from "../icons/MenuIcon.svelte";
 
-  export let handleClick: () => void;
+  export let onClick: () => void;
 </script>
 
 <button
   aria-label="more"
   class="p-3 rounded-full hover:bg-purple-900 md:hidden"
-  on:click={handleClick}
+  on:click={onClick}
   type="button"
 >
   <MenuIcon />

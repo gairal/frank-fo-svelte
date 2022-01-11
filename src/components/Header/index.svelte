@@ -18,10 +18,10 @@
       frank g.
     </h1>
     <Nav class="hidden md:flex space-x-4" />
-    <Menu {handleClick} />
+    <Menu onClick={handleClick} />
     <More />
   </div>
   {#if expanded}
-    <Nav class="flex flex-col md:hidden space-y-4" />
+    <Nav onClick={handleClick} class="flex flex-col md:hidden space-y-4" />
   {/if}
 </header>
