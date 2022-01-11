@@ -11,13 +11,13 @@
 </script>
 
 <header
-  class="relative w-full rounded-2xl mx-auto px-4 text-white border-4 border-purple-200 font-cursive border-neon"
+  class="relative w-full rounded-2xl mx-auto px-4 md:mb-8 text-white border-4 border-purple-200 font-cursive border-neon"
 >
   <div class="h-20 flex items-center">
     <h1 class="text-3xl md:text-4xl flex-1 text-purple-200 text-neon">
       frank g.
     </h1>
-    <Nav class="hidden md:flex space-x-4" />
+    <Nav class="hidden md:flex space-x-4 z-20" />
     <Menu onClick={handleClick} />
     <More />
   </div>
