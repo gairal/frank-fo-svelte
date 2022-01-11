@@ -1,6 +1,6 @@
 import { writable } from "svelte/store";
 
-import type { Education } from "./types";
+import type { Education, Interest, Skill, Travel, Work } from "./types";
 
 /**
  * page title
@@ -8,6 +8,10 @@ import type { Education } from "./types";
 export const title = writable("");
 
 /**
- * education service results
+ * service results
  */
-export const education = writable<Education[]>([]);
+export const educations = writable<Education[]>([]);
+export const interests = writable<Interest[]>([]);
+export const skills = writable<Skill[]>([]);
+export const travels = writable<Travel[]>([]);
+export const works = writable<Work[]>([]);

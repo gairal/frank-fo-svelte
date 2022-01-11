@@ -1,11 +1,25 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import { title } from "../../stores";
+  import { fetchData } from "../../fetch";
+  import { interests, title, travels } from "../../stores";
 
   onMount(() => {
     title.set("Interests");
+
+    if (!$travels.length) {
+      Promise.all([
+        fetchData("interests", interests),
+        fetchData("travels", travels),
+      ]);
+    }
   });
 </script>
 
-<div>INTERES</div>
+{#each $travels as travel}
+  <div>
+    {travel.place}
+  </div>
+{:else}
+  <progress />
+{/each}
