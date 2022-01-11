@@ -25,4 +25,6 @@
   <div>
     {edu.name}
   </div>
+{:else}
+  <progress />
 {/each}
