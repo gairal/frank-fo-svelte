@@ -9,7 +9,7 @@
 </script>
 
 <h2
-  class="md:absolute inset-x-0 flex justify-center text-4xl md:top-24 md:text-7xl text-neon font-cursive text-white z-10"
+  class="md:absolute inset-x-0 flex justify-center text-4xl md:top-24 md:text-7xl font-cursive text-neon text-white z-10"
 >
   {$title}
 </h2>
@@ -21,3 +21,9 @@
   <Route path="skills"><Skills /></Route>
   <Route path="interests"><Interests /></Route>
 </main>
+
+<style>
+  h2 {
+    animation: flicker 1.5s infinite alternate;
+  }
+</style>
