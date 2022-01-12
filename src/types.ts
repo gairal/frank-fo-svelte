@@ -19,7 +19,7 @@ export interface Skill {
 }
 
 export interface Travel {
-  coordinate: { latitude: number; longitude: number };
+  coordinates: { latitude: number; longitude: number };
   place: string;
 }
 

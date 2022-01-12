@@ -1,5 +1,8 @@
 module.exports = {
   extends: "airbnb-typescript-prettier",
+  globals: {
+    google: "readonly",
+  },
   overrides: [
     {
       files: ["*.svelte"],
