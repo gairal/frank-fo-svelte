@@ -3,6 +3,7 @@
 
   import { fetchData } from "../../fetch";
   import { title, works } from "../../stores";
+  import XpCard from "../XpCard.svelte";
 
   onMount(() => {
     title.set("Work");
@@ -13,10 +14,18 @@
   });
 </script>
 
-{#each $works as work}
-  <section>
-    {work.name}
-  </section>
-{:else}
-  <progress />
-{/each}
+<section class="p-4">
+  {#each $works as work}
+    <XpCard
+      dateIn={work.dateIn}
+      dateOut={work.dateOut}
+      description={work.description}
+      img={work.image}
+      name={work.name}
+      place={work.place}
+      title={work.title}
+    />
+  {:else}
+    <progress />
+  {/each}
+</section>

@@ -3,7 +3,7 @@
 
   import { fetchData } from "../../fetch";
   import { educations, title } from "../../stores";
-  import XPCard from "../XPCard.svelte";
+  import XpCard from "../XpCard.svelte";
 
   onMount(() => {
     title.set("Education");
@@ -16,7 +16,7 @@
 
 <section class="p-4">
   {#each $educations as edu}
-    <XPCard
+    <XpCard
       dateIn={edu.dateIn}
       dateOut={edu.dateOut}
       description={edu.diploma}

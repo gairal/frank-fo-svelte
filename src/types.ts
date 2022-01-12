@@ -24,5 +24,15 @@ export interface Travel {
 }
 
 export interface Work {
+  accomplishments: string;
+  dateIn: string;
+  dateOut?: string;
+  description: string;
+  image: string;
   name: string;
+  // @todo: remove
+  // order: number;
+  place: string;
+  title: string;
+  website: string;
 }

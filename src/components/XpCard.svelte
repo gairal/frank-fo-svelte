@@ -2,7 +2,7 @@
   import { intlFormat } from "date-fns";
 
   export let dateIn: string;
-  export let dateOut: string;
+  export let dateOut = "";
   export let description: string;
   export let img: string;
   export let name: string;
@@ -16,10 +16,14 @@
   });
 
   let outDate: string;
-  $: outDate = intlFormat(new Date(dateOut), {
-    month: "numeric",
-    year: "numeric",
-  });
+  $: {
+    if (dateOut) {
+      outDate = intlFormat(new Date(dateOut), {
+        month: "numeric",
+        year: "numeric",
+      });
+    } else outDate = "current";
+  }
 </script>
 
 <div
@@ -30,8 +34,8 @@
     <div>
       <h3 class="font-bold text-sm">{title}</h3>
       <div class="flex space-x-2">
-        <span class="px-2 rounded bg-pink-400 text-xs">{inDate}-{outDate}</span
-        ><span class="px-2 rounded bg-pink-400 text-xs">{place}</span>
+        <span class="px-2 rounded bg-pink-400 text-xs">{inDate}-{outDate}</span>
+        <span class="px-2 rounded bg-pink-400 text-xs">{place}</span>
       </div>
     </div>
     <p>{description}</p>
