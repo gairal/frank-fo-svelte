@@ -16,7 +16,7 @@
 </script>
 
 <section class="h-full p-4">
-  {#each $works as work}
+  {#each $works as work (work.name)}
     <XpCard
       dateIn={work.dateIn}
       dateOut={work.dateOut}

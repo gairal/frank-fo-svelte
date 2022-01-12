@@ -3,7 +3,7 @@
 
   import { fetchData } from "../../fetch";
   import { skills, title } from "../../stores";
-import Loader from "../Loader.svelte";
+  import Loader from "../Loader.svelte";
 
   onMount(() => {
     title.set("Skills");
@@ -14,7 +14,7 @@ import Loader from "../Loader.svelte";
   });
 </script>
 
-{#each $skills as skill}
+{#each $skills as skill (skill.label)}
   <section>
     {skill.label}
   </section>

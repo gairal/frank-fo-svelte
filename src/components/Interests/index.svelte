@@ -20,7 +20,7 @@
 
 {#if $isMapReady}<Map />{/if}
 <section class="p-4">
-  {#each $travels as travel}
+  {#each $travels as travel (travel.place)}
     <span>
       {travel.place}
     </span>
