@@ -15,4 +15,5 @@ module.exports = {
     "^.+\\.svelte$": ["svelte-jester", { preprocess: true }],
     "^.+\\.ts$": "ts-jest",
   },
+  transformIgnorePatterns: ["node_modules/(?!(svelte-routing)/)"],
 };
