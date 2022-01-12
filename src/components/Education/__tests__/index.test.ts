@@ -2,13 +2,22 @@ import { render, screen } from "@testing-library/svelte";
 import fetchMock from "jest-fetch-mock";
 
 import Education from "../index.svelte";
+import { educationsFixture } from "../../../../test/fixtures/education";
 
-fetchMock.mockResponse(JSON.stringify([]));
+const fixture = educationsFixture();
 
 const subject = () => render(Education);
+
+beforeEach(() => {
+  fetchMock.mockOnce(JSON.stringify(fixture));
+});
 
 it("it works", async () => {
   subject();
 
-  await screen.findByText("interest");
+  await screen.findByText(
+    `${fixture[0].name} | ${fixture[0].shortDescription}`
+  );
+
+  expect(await screen.findAllByRole("img")).toHaveLength(3);
 });

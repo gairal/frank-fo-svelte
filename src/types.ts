@@ -1,6 +1,6 @@
 export interface Education {
-  dateIn: Date;
-  dateOut: Date;
+  dateIn: string;
+  dateOut: string;
   diploma: string;
   extra?: string;
   image: string;
