@@ -12,8 +12,9 @@ module.exports = {
   testPathIgnorePatterns: ["<rootDir>/dist/", "<rootDir>/node_modules/"],
   testRegex: "/__tests__/.*\\.test\\.ts$",
   transform: {
+    "^.+\\.js$": "babel-jest",
     "^.+\\.svelte$": ["svelte-jester", { preprocess: true }],
     "^.+\\.ts$": "ts-jest",
   },
-  transformIgnorePatterns: ["node_modules/(?!(svelte-routing)/)"],
+  transformIgnorePatterns: ["node_modules/?!(svelte-routing)"],
 };

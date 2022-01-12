@@ -10,13 +10,14 @@ beforeEach(() => {
 });
 
 describe("App", () => {
-  test.skip("routes to the right page", async () => {
+  test("routes to the right page", async () => {
     subject();
 
+    // header
     await screen.findByText("frank g.");
-    await screen.findByRole("button", { name: "work" });
-    await screen.findByRole("button", { name: "education" });
-    await screen.findByRole("button", { name: "interests" });
-    await screen.findByRole("button", { name: "skills" });
+    await screen.findByRole("link", { name: "Work" });
+    await screen.findByRole("link", { name: "Education" });
+    await screen.findByRole("link", { name: "Interests" });
+    await screen.findByRole("link", { name: "Skills" });
   });
 });
