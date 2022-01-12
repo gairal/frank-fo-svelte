@@ -3,6 +3,7 @@
 
   import { fetchData } from "../../fetch";
   import { educations, title } from "../../stores";
+  import XPCard from "../XPCard.svelte";
 
   onMount(() => {
     title.set("Education");
@@ -13,18 +14,18 @@
   });
 </script>
 
-{#each $educations as edu}
-  <section class="shadow p-2 rounded flex space-x-2">
-    <img class="rounded" src="img/{edu.image}" alt={edu.name} />
-    <div class="flex flex-col justify-between">
-      <h3>{edu.name} | {edu.shortDescription}</h3>
-      <div class="flex space-x-2">
-        <span class="px-2 rounded bg-pink-400">{edu.dateIn}-{edu.dateOut}</span
-        ><span class="px-2 rounded bg-pink-400">{edu.place}</span>
-      </div>
-      <p>{edu.diploma}</p>
-    </div>
-  </section>
-{:else}
-  <progress />
-{/each}
+<section class="p-4">
+  {#each $educations as edu}
+    <XPCard
+      dateIn={edu.dateIn}
+      dateOut={edu.dateOut}
+      description={edu.diploma}
+      img={edu.image}
+      name={edu.name}
+      place={edu.place}
+      title={`${edu.name} | ${edu.shortDescription}`}
+    />
+  {:else}
+    <progress />
+  {/each}
+</section>
