@@ -3,6 +3,7 @@
 
   import { fetchData } from "../../fetch";
   import { skills, title } from "../../stores";
+import Loader from "../Loader.svelte";
 
   onMount(() => {
     title.set("Skills");
@@ -18,5 +19,5 @@
     {skill.label}
   </section>
 {:else}
-  <progress />
+  <Loader />
 {/each}

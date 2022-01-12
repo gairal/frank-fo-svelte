@@ -3,6 +3,7 @@
 
   import { fetchData } from "../../fetch";
   import { interests, isMapReady, title, travels } from "../../stores";
+  import Loader from "../Loader.svelte";
   import Map from "../Map.svelte";
 
   onMount(() => {
@@ -24,6 +25,6 @@
       {travel.place}
     </span>
   {:else}
-    <progress />
+    <Loader />
   {/each}
 </section>

@@ -3,6 +3,7 @@
 
   import { fetchData } from "../../fetch";
   import { title, works } from "../../stores";
+  import Loader from "../Loader.svelte";
   import XpCard from "../XpCard.svelte";
 
   onMount(() => {
@@ -14,7 +15,7 @@
   });
 </script>
 
-<section class="p-4">
+<section class="h-full p-4">
   {#each $works as work}
     <XpCard
       dateIn={work.dateIn}
@@ -26,6 +27,6 @@
       title={work.title}
     />
   {:else}
-    <progress />
+    <Loader />
   {/each}
 </section>

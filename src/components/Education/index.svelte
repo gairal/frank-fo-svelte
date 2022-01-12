@@ -3,6 +3,7 @@
 
   import { fetchData } from "../../fetch";
   import { educations, title } from "../../stores";
+  import Loader from "../Loader.svelte";
   import XpCard from "../XpCard.svelte";
 
   onMount(() => {
@@ -14,7 +15,7 @@
   });
 </script>
 
-<section class="p-4">
+<section class="h-full p-4">
   {#each $educations as edu}
     <XpCard
       dateIn={edu.dateIn}
@@ -26,6 +27,6 @@
       title={`${edu.name} | ${edu.shortDescription}`}
     />
   {:else}
-    <progress />
+    <Loader />
   {/each}
 </section>
