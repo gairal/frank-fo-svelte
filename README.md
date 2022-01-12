@@ -1,4 +1,4 @@
-# frank.gairal.com API ![example workflow](https://github.com/gairal/frank-fo-svelte/actions/workflows/ci.yml/badge.svg)
+# frank.gairal.com Svelte App ![example workflow](https://github.com/gairal/frank-fo-svelte/actions/workflows/ci.yml/badge.svg)
 
 ## todo
 
