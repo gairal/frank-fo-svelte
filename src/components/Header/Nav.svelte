@@ -1,11 +1,8 @@
 <script lang="ts">
   import { slide } from "svelte/transition";
   import { quintOut } from "svelte/easing";
-  import { createEventDispatcher } from "svelte";
 
   import Link from "./Link.svelte";
-
-  const dispatch = createEventDispatcher();
 
   let className: string;
   export { className as class };
@@ -13,7 +10,7 @@
 
 <nav
   class={className}
-  on:click={() => dispatch("click")}
+  on:click
   transition:slide={{ duration: 300, easing: quintOut }}
 >
   <Link to="/">Work</Link>
