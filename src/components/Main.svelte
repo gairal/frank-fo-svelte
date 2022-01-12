@@ -5,7 +5,7 @@
   import Interests from "./Interests/index.svelte";
   import Skills from "./Skills/index.svelte";
   import Work from "./Work/index.svelte";
-  import { title } from "../stores";
+  import { title } from "../stores/appStore";
 </script>
 
 <h2

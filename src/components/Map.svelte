@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from "svelte";
 
-  import { travels } from "../stores";
+  import { travels } from "../stores/apiStore";
 
   let container: HTMLDivElement;
   let map: google.maps.Map;

@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
 
   import { fetchData } from "../../fetch";
-  import { educations, title } from "../../stores";
+  import { educations, title } from "../../stores/index";
   import Loader from "../Loader.svelte";
   import XpCard from "../XpCard.svelte";
 

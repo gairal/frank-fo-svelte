@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
 
   import { fetchData } from "../../fetch";
-  import { interests, isMapReady, title, travels } from "../../stores";
+  import { interests, isMapReady, title, travels } from "../../stores/index";
   import Loader from "../Loader.svelte";
   import Map from "../Map.svelte";
 

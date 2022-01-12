@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { title } from "../stores";
+  import { title } from "../stores/appStore";
 
   let pageTitle: string;
   $: {

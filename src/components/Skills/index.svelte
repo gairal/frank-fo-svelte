@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
 
   import { fetchData } from "../../fetch";
-  import { skills, title } from "../../stores";
+  import { skills, title } from "../../stores/index";
   import Loader from "../Loader.svelte";
 
   onMount(() => {
