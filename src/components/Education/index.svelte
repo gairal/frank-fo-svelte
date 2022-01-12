@@ -13,6 +13,7 @@
   });
 </script>
 
+<p>interest</p>
 {#each $educations as edu}
   <section class="shadow p-2 rounded flex space-x-2">
     <img class="rounded" src="img/{edu.image}" alt={edu.name} />
