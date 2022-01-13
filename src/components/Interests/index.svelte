@@ -18,13 +18,17 @@
   });
 </script>
 
-{#if $isMapReady}<Map />{/if}
-<section class="p-4">
-  {#each $travels as travel (travel.place)}
-    <span>
-      {travel.place}
-    </span>
-  {:else}
-    <Loader />
-  {/each}
+<section class="h-full flex flex-col">
+  {#if $isMapReady}<Map />{/if}
+  <div class="flex-1 p-4 flex justify-center items-center">
+    {#if $interests.length}
+      <ul>
+        {#each $interests as interest (interest.label)}<li>
+            {interest.label}
+          </li>{/each}
+      </ul>
+    {:else}
+      <Loader />
+    {/if}
+  </div>
 </section>

@@ -1,3 +1,7 @@
+export interface Category {
+  label: string;
+}
+
 export interface Education {
   dateIn: string;
   dateOut: string;
@@ -11,11 +15,14 @@ export interface Education {
 }
 
 export interface Interest {
-  name: string;
+  description?: string;
+  label: string;
 }
 
 export interface Skill {
+  interests: [];
   label: string;
+  order: number;
 }
 
 export interface Travel {

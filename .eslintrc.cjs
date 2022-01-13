@@ -83,6 +83,10 @@ module.exports = {
         selector: "typeLike",
       },
     ],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      { args: "all", ignoreRestSiblings: true, vars: "all" },
+    ],
     "import/order": [
       "error",
       {

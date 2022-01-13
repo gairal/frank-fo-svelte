@@ -1,6 +1,8 @@
 <script lang="ts">
   import { intlFormat } from "date-fns";
 
+  import Card from "./Education/Card.svelte";
+
   export let dateIn: string;
   export let dateOut = "";
   export let description: string;
@@ -26,9 +28,7 @@
   }
 </script>
 
-<div
-  class="p-2 mb-4 rounded flex space-x-4 shadow-md hover:shadow-xl border border-pink-400"
->
+<Card class="flex space-x-4 mb-4">
   <img class="rounded self-start" src="img/{img}" alt={name} />
   <div class="flex flex-col justify-between">
     <div>
@@ -40,4 +40,4 @@
     </div>
     <p>{description}</p>
   </div>
-</div>
+</Card>
