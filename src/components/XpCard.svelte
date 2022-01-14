@@ -2,6 +2,7 @@
   import { intlFormat } from "date-fns";
 
   import Card from "./Education/Card.svelte";
+  import H2 from "./H2.svelte";
 
   export let dateIn: string;
   export let dateOut = "";
@@ -32,7 +33,7 @@
   <img class="rounded self-start" src="img/{img}" alt={name} />
   <div class="flex flex-col justify-between">
     <div>
-      <h3 class="font-bold text-sm">{title}</h3>
+      <H2>{title}</H2>
       <div class="flex space-x-2">
         <span class="px-2 rounded bg-pink-400 text-xs">{inDate}-{outDate}</span>
         <span class="px-2 rounded bg-pink-400 text-xs">{place}</span>

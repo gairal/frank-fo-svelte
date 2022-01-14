@@ -8,11 +8,11 @@
   import { title } from "../stores/appStore";
 </script>
 
-<h2
+<h1
   class="md:absolute inset-x-0 flex justify-center text-4xl md:top-24 md:text-7xl font-cursive text-neon text-white z-10"
 >
   {$title}
-</h2>
+</h1>
 <main
   class="flex-1 w-full rounded-2xl font-mono text-white mx-auto overflow-y-auto border-2 border-purple-200 border-neon"
 >
@@ -25,7 +25,7 @@
 </main>
 
 <style>
-  h2 {
-    animation: flicker 1.5s infinite alternate;
+  h1 {
+    animation: pulsate 1.5s infinite alternate;
   }
 </style>

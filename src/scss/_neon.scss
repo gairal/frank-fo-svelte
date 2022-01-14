@@ -12,6 +12,18 @@ $neon-text-shadow: 0 0 7px $purple-300, 0 0 10px $purple-300,
   text-shadow: $neon-text-shadow;
 }
 
+@keyframes pulsate {
+  100% {
+    text-shadow: $neon-text-shadow;
+  }
+
+  0% {
+    text-shadow: 0 0 3px $purple-300, 0 0 5px $purple-300, 0 0 10px $purple-300,
+      0 0 21px $purple-900, 0 0 41px $purple-900, 0 0 46px $purple-900,
+      0 0 51px $purple-900, 0 0 75px $purple-900;
+  }
+}
+
 @keyframes flicker {
   0%,
   18%,
