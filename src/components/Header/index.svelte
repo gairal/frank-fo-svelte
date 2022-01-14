@@ -11,7 +11,7 @@
 </script>
 
 <header
-  class="relative w-full rounded-2xl mx-auto px-4 md:mb-8 text-white border-4 border-purple-200 font-cursive border-neon"
+  class="relative w-full rounded-2xl mx-auto px-4 mb-4 sm:mb-6 md:mb-8 text-white border-4 border-purple-200 font-cursive border-neon"
 >
   <div class="h-20 flex items-center">
     <p

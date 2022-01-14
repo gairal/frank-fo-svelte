@@ -9,7 +9,7 @@
 </script>
 
 <h1
-  class="md:absolute inset-x-0 flex justify-center text-4xl md:top-24 md:text-7xl font-cursive text-neon text-white z-10"
+  class="absolute inset-x-0 top-[5.7rem] md:top-24 flex justify-center text-4xl sm:text-5xl md:text-7xl font-cursive text-neon text-white z-10"
 >
   {$title}
 </h1>
