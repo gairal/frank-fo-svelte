@@ -6,6 +6,7 @@
   import Skills from "./Skills/index.svelte";
   import Work from "./Work/index.svelte";
   import { title } from "../stores/appStore";
+  import Sunset from "./Sunset.svelte";
 </script>
 
 <h1
@@ -23,6 +24,8 @@
     <Route path="interests"><Interests /></Route>
   </Router>
 </main>
+
+<Sunset />
 
 <style>
   h1 {
