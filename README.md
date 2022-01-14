@@ -6,6 +6,5 @@
 - [ ] updated CV pdf
 - [ ] add PWA
 - [ ] neon favicon
-- [ ] sun on bottom
 - [ ] add accomplishments on work cards
 - [ ] re-model accomplishments

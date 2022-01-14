@@ -15,7 +15,7 @@
 </script>
 
 <div
-  class="absolute h-full bg-pink-700 rounded-r-sm transition-all ease-in-out delay-1000"
+  class="absolute h-full bg-pink-600 rounded-r-sm transition-all ease-in-out delay-1000"
   style={`width: ${level}%;`}
   in:expand={{ duration: level * 10, width: level }}
 />

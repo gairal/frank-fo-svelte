@@ -12,7 +12,7 @@
   <ul>
     {#each category.skills as skill (skill.label)}
       <li
-        class="relative border-l-2 border-l-pink-300 mb-2 opacity-60 hover:opacity-100"
+        class="relative border-l-2 border-l-pink-300 mb-2 lg:opacity-60 hover:opacity-100"
       >
         {#if skill.level}
           <Progress level={skill.level} />
