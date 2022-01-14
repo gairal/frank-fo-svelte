@@ -4,7 +4,7 @@
 </script>
 
 <div
-  class={`p-2 rounded shadow-md hover:shadow-xl border border-pink-400 ${className}`}
+  class={`p-2 rounded shadow-md hover:shadow-lg border border-pink-400 ${className}`}
 >
   <slot />
 </div>
