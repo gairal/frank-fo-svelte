@@ -1,26 +1,32 @@
-$neon-text-shadow: 0 0 7px $purple-300, 0 0 10px $purple-300,
-  0 0 21px $purple-300, 0 0 42px $purple-900, 0 0 82px $purple-900,
-  0 0 92px $purple-900, 0 0 102px $purple-900, 0 0 151px $purple-900;
+@mixin neon-border($width, $color) {
+  box-shadow: 0 0 $width $color, 0 0 ($width * 2) $color,
+    0 0 ($width * 6) $color, 0 0 ($width * 12) $color, inset 0 0 $width $color,
+    inset 0 0 ($width * 2) $color, inset 0 0 ($width * 6) $color,
+    inset 0 0 ($width * 12) $color;
+}
+
+@mixin neon-text($width, $color1, $color2: $color1) {
+  text-shadow: 0 0 $width $color1, 0 0 ($width * 2) $color1,
+    0 0 ($width * 3) $color1, 0 0 ($width * 6) $color2,
+    0 0 ($width * 12) $color2, 0 0 ($width * 13) $color2,
+    0 0 ($width * 15) $color2, 0 0 ($width * 22) $color2;
+}
 
 .border-neon {
-  box-shadow: 0 0 1px $purple-300, 0 0 2px $purple-300, 0 0 6px $purple-300,
-    0 0 12px $purple-300, inset 0 0 1px $purple-300, inset 0 0 2px $purple-300,
-    inset 0 0 6px $purple-300, inset 0 0 12px $purple-300;
+  @include neon-border(1px, $purple-300);
 }
 
 .text-neon {
-  text-shadow: $neon-text-shadow;
+  @include neon-text(2px, $purple-300, $purple-900);
 }
 
 @keyframes pulsate {
   100% {
-    text-shadow: $neon-text-shadow;
+    @include neon-text(1px, $purple-300, $purple-900);
   }
 
   0% {
-    text-shadow: 0 0 3px $purple-300, 0 0 5px $purple-300, 0 0 10px $purple-300,
-      0 0 21px $purple-900, 0 0 41px $purple-900, 0 0 46px $purple-900,
-      0 0 51px $purple-900, 0 0 75px $purple-900;
+    @include neon-text(4px, $purple-300, $purple-900);
   }
 }
 
@@ -32,7 +38,7 @@ $neon-text-shadow: 0 0 7px $purple-300, 0 0 10px $purple-300,
   53%,
   57%,
   100% {
-    text-shadow: $neon-text-shadow;
+    @include neon-text(2px, $purple-300, $purple-900);
   }
 
   20%,

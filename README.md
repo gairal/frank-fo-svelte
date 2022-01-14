@@ -6,6 +6,6 @@
 - [ ] updated CV pdf
 - [ ] add PWA
 - [ ] neon favicon
-- [ ] pulsate animation on the title
 - [ ] sun on bottom
 - [ ] add accomplishments on work cards
+- [ ] animation on skill level
