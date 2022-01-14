@@ -1,7 +1,9 @@
 <script lang="ts">
+
   import type { SkillByCategory } from "../../types";
   import Card from "../Education/Card.svelte";
   import H2 from "../H2.svelte";
+  import Progress from "./Progress.svelte";
 
   export let category: SkillByCategory;
 </script>
@@ -14,10 +16,7 @@
         class="relative border-l-2 border-l-pink-300 mb-2 opacity-60 hover:opacity-100"
       >
         {#if skill.level}
-          <div
-            class="absolute h-full bg-pink-500 rounded-r-sm"
-            style={`width: ${skill.level}%;`}
-          />
+          <Progress level={skill.level} />
         {/if}
         <p class="relative inline-block p-2 z-10">
           <span class="block">{skill.label}</span>
