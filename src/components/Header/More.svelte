@@ -17,7 +17,7 @@
 <button
   aria-label="more"
   bind:this={button}
-  class="p-3 rounded-full hover:bg-purple-900 z-10"
+  class="p-3 rounded-full hover:bg-purple-900 z-20"
   type="button"
   on:click={toggleMore}
 >

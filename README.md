@@ -8,4 +8,4 @@
 - [ ] neon favicon
 - [ ] sun on bottom
 - [ ] add accomplishments on work cards
-- [ ] animation on skill level
+- [ ] re-model accomplishments

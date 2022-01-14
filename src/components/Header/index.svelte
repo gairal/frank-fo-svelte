@@ -20,7 +20,7 @@
     >
       frank g.
     </p>
-    <Nav class="hidden md:flex space-x-4 z-10" />
+    <Nav class="hidden md:flex space-x-4 z-20" />
     <Menu on:click={handleClick} />
     <More />
   </div>
