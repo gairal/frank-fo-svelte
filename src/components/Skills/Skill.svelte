@@ -15,7 +15,7 @@
       >
         {#if skill.level}
           <div
-            class="absolute h-full bg-pink-500"
+            class="absolute h-full bg-pink-500 rounded-r-sm"
             style={`width: ${skill.level}%;`}
           />
         {/if}

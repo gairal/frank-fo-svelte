@@ -1,5 +1,6 @@
 <script lang="ts">
   import { intlFormat } from "date-fns";
+  import { backOut } from "svelte/easing";
   import { slide } from "svelte/transition";
 
   import Card from "./Education/Card.svelte";
@@ -63,7 +64,10 @@
   </button>
   {#if description}
     {#if expanded}
-      <p class="pt-2 italic font-mono" transition:slide={{ duration: 300 }}>
+      <p
+        class="pt-2 italic font-mono"
+        transition:slide={{ duration: 500, easing: backOut }}
+      >
         {@html description}
       </p>
     {/if}

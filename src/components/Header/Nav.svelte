@@ -1,7 +1,7 @@
 <script lang="ts">
   import { Router } from "svelte-routing";
   import { slide } from "svelte/transition";
-  import { quintOut } from "svelte/easing";
+  import { backOut } from "svelte/easing";
 
   import Link from "./Link.svelte";
 
@@ -12,7 +12,7 @@
 <nav
   class={className}
   on:click
-  transition:slide={{ duration: 300, easing: quintOut }}
+  transition:slide={{ duration: 300, easing: backOut }}
 >
   <Router>
     <Link to="/">Work</Link>
