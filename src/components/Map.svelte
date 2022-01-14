@@ -44,4 +44,4 @@
   }
 </script>
 
-<div class="w-full h-80" bind:this={container} />
+<div class="w-full h-1/3" bind:this={container} />

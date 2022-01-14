@@ -22,12 +22,13 @@
   {#if $isMapReady}<Map />{/if}
   <div class="flex-1 p-4 flex justify-center items-center">
     {#if $interests.length}
-      <ul>
+      <ul class="text-center font-semibold">
         {#each $interests as interest (interest.label)}
           <li title={interest.description}>
             {interest.label}
           </li>
         {/each}
+        <li>...</li>
       </ul>
     {:else}
       <Loader />
