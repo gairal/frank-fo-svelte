@@ -14,7 +14,7 @@
   {$title}
 </h1>
 <main
-  class="flex-1 w-full rounded-2xl font-mono text-white mx-auto overflow-y-auto border border-purple-200 border-neon"
+  class="flex-1 w-full rounded-2xl font-sans text-white mx-auto overflow-y-auto border border-purple-200 border-neon"
 >
   <Router>
     <Route path="/"><Work /></Route>

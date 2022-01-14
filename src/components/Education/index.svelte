@@ -20,7 +20,8 @@
     <XpCard
       dateIn={edu.dateIn}
       dateOut={edu.dateOut}
-      description={edu.diploma}
+      description={edu.extra}
+      headline={edu.diploma}
       img={edu.image}
       name={edu.name}
       place={edu.place}

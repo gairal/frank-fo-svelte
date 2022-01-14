@@ -3,4 +3,4 @@
   export { className as class };
 </script>
 
-<h2 class={`text-pink-50 font-bold mb-2 ${className}`}><slot /></h2>
+<h2 class={`text-pink-50 font-bold ${className}`}><slot /></h2>

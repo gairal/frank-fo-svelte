@@ -20,7 +20,8 @@
     <XpCard
       dateIn={work.dateIn}
       dateOut={work.dateOut}
-      description={work.description}
+      description={work.accomplishments}
+      headline={work.description}
       img={work.image}
       name={work.name}
       place={work.place}
