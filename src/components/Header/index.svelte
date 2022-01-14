@@ -16,11 +16,11 @@
   <div class="h-20 flex items-center">
     <p
       role="heading"
-      class="text-3xl md:text-4xl flex-1 text-purple-200 text-neon"
+      class="text-2xl sm:text-3xl md:text-4xl flex-1 text-purple-200 text-neon"
     >
       frank g.
     </p>
-    <Nav class="hidden md:flex space-x-4 z-20" />
+    <Nav class="hidden md:flex space-x-4 z-10" />
     <Menu on:click={handleClick} />
     <More />
   </div>

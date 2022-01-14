@@ -15,7 +15,7 @@
   });
 </script>
 
-<section class="h-full p-4">
+<section class="p-4 pb-0" class:h-full={!$works.length}>
   {#each $works as work (`${work.name}-${work.dateIn}`)}
     <XpCard
       dateIn={work.dateIn}

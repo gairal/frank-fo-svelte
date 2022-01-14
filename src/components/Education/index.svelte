@@ -15,7 +15,7 @@
   });
 </script>
 
-<section class="h-full p-4">
+<section class="p-4 pb-0" class:h-full={!$educations.length}>
   {#each $educations as edu (edu.name)}
     <XpCard
       dateIn={edu.dateIn}

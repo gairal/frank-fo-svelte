@@ -15,7 +15,7 @@
   });
 </script>
 
-<section class="h-full p-4 pb-0">
+<section class="p-4 pb-0" class:h-full={!$skills.length}>
   {#if $skills.length}
     <div class="columns-1 md:columns-2 xl:columns-3">
       {#each $skills as category (category.label)}
