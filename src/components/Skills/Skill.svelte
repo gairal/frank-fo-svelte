@@ -1,5 +1,4 @@
 <script lang="ts">
-
   import type { SkillByCategory } from "../../types";
   import Card from "../Education/Card.svelte";
   import H2 from "../H2.svelte";

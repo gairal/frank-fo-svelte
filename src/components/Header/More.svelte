@@ -17,7 +17,7 @@
 <button
   aria-label="more"
   bind:this={button}
-  class="p-3 rounded-full hover:bg-purple-900 z-20"
+  class="p-3 rounded-full hover:bg-indigo-900 z-20"
   type="button"
   on:click={toggleMore}
 >
@@ -27,7 +27,7 @@
 {#if showMore}
   <ClickOutside exclude={[button]} on:clickoutside={toggleMore}>
     <ul
-      class="absolute px-4 py-2 bg-purple-900 border-neon top-16 right-5 z-20"
+      class="absolute px-4 py-2 bg-indigo-900 border-neon top-16 right-5 z-20"
     >
       <li class="hover:text-pink-400">
         <a
