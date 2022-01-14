@@ -31,10 +31,11 @@
     >
       <li class="hover:text-pink-400">
         <a
-          class="flex w-full p-3 justify-between "
+          class="flex w-full p-3 justify-between"
           href="mailto:frank@gairal.com"
           rel="noopener noreferrer"
           title="frank@gairal.com"
+          target="_blank"
           tabindex="0"
           ><EmailIcon class="fill-current" fill="" /><span class="ml-2"
             >frank@gairal.com</span

@@ -1,5 +1,8 @@
 module.exports = {
-  extends: "airbnb-typescript-prettier",
+  extends: [
+    "airbnb-typescript-prettier",
+    "plugin:typescript-sort-keys/recommended",
+  ],
   globals: {
     google: "readonly",
   },
