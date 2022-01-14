@@ -3,7 +3,7 @@
 </script>
 
 <button
-  aria-label="more"
+  aria-label="menu"
   class="p-3 rounded-full hover:bg-purple-900 md:hidden"
   on:click
   type="button"

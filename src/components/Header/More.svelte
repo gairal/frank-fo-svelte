@@ -1,6 +1,5 @@
 <script lang="ts">
-  // @ts-expect-error no types declared
-  import ClickOutside from "svelte-click-outside";
+  import ClickOutside from "svelte-click-outside/src/index.svelte";
 
   import BuildIcon from "../icons/BuildIcon.svelte";
   import EmailIcon from "../icons/EmailIcon.svelte";

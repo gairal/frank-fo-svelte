@@ -12,14 +12,12 @@ beforeEach(() => {
   fetchMock.mockOnce(JSON.stringify(fixture));
 });
 
-describe("Education", () => {
-  test("displays education cards", async () => {
-    subject();
+test("displays education cards", async () => {
+  subject();
 
-    await screen.findByText(
-      `${fixture[0].name} | ${fixture[0].shortDescription}`
-    );
+  await screen.findByText(
+    `${fixture[0].name} | ${fixture[0].shortDescription}`
+  );
 
-    expect(await screen.findAllByRole("img")).toHaveLength(3);
-  });
+  expect(await screen.findAllByRole("img")).toHaveLength(3);
 });

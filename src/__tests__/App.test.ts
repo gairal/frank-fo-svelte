@@ -14,32 +14,31 @@ beforeEach(() => {
   fetchMock.mockResponse(JSON.stringify([]));
 });
 
-describe("App", () => {
-  test("displays default vue", async () => {
-    await subject();
+test("displays default vue", async () => {
+  await subject();
 
-    // header
-    await screen.findByRole("link", { name: "Work" });
-    await screen.findByRole("link", { name: "Education" });
-    await screen.findByRole("link", { name: "Interests" });
-    await screen.findByRole("link", { name: "Skills" });
+  // header
+  await screen.findByRole("link", { name: "Work" });
+  await screen.findByRole("link", { name: "Education" });
+  await screen.findByRole("link", { name: "Interests" });
+  await screen.findByRole("link", { name: "Skills" });
 
-    await screen.findAllByRole("button", { name: "more" });
+  await screen.findByRole("button", { name: "more" });
+  await screen.findByRole("button", { name: "menu" });
 
-    // default component loaded
-    await screen.findByRole("heading", { name: "Work" });
-  });
+  // default component loaded
+  await screen.findByRole("heading", { name: "Work" });
+});
 
-  test("routes requests", async () => {
-    await subject();
+test("routes requests", async () => {
+  await subject();
 
-    userEvent.click(await screen.findByRole("link", { name: "Education" }));
-    await screen.findByRole("heading", { name: "Education" });
+  userEvent.click(await screen.findByRole("link", { name: "Education" }));
+  await screen.findByRole("heading", { name: "Education" });
 
-    userEvent.click(await screen.findByRole("link", { name: "Skills" }));
-    await screen.findByRole("heading", { name: "Skills" });
+  userEvent.click(await screen.findByRole("link", { name: "Skills" }));
+  await screen.findByRole("heading", { name: "Skills" });
 
-    userEvent.click(await screen.findByRole("link", { name: "Interests" }));
-    await screen.findByRole("heading", { name: "Interests" });
-  });
+  userEvent.click(await screen.findByRole("link", { name: "Interests" }));
+  await screen.findByRole("heading", { name: "Interests" });
 });
