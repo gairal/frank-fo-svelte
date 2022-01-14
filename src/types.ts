@@ -20,9 +20,13 @@ export interface Interest {
 }
 
 export interface Skill {
-  interests: [];
+  description?: string;
   label: string;
-  order: number;
+  level?: number;
+}
+
+export interface SkillByCategory extends Category {
+  skills: Skill[];
 }
 
 export interface Travel {
@@ -37,8 +41,6 @@ export interface Work {
   description: string;
   image: string;
   name: string;
-  // @todo: remove
-  // order: number;
   place: string;
   title: string;
   website: string;
