@@ -15,10 +15,9 @@
   });
 </script>
 
-<section class="p-4 pb-0 xl:columns-2" class:h-full={!$works.length}>
+<section class="p-4 pb-0" class:h-full={!$works.length}>
   {#each $works as work (`${work.name}-${work.dateIn}`)}
     <XpCard
-    class="inline-block "
       dateIn={work.dateIn}
       dateOut={work.dateOut}
       description={work.accomplishments}
