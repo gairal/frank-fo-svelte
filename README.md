@@ -5,6 +5,5 @@
 - [ ] delete old google cloud project
 - [ ] updated CV pdf
 - [ ] add PWA
-- [ ] neon favicon
-- [ ] add accomplishments on work cards
 - [ ] re-model accomplishments
+- [ ] add accomplishments on work cards
