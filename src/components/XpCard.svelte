@@ -3,9 +3,11 @@
   import { backOut } from "svelte/easing";
   import { slide } from "svelte/transition";
 
-  import Card from "./Education/Card.svelte";
+  import Card from "./Card.svelte";
   import H2 from "./H2.svelte";
 
+  let className = "";
+  export { className as class };
   export let dateIn: string;
   export let dateOut = "";
   export let description = "";
@@ -41,7 +43,7 @@
   };
 </script>
 
-<Card class="mb-4">
+<Card class={`mb-4 w-full ${className}`}>
   <button
     class:cursor-default={!description}
     class="flex space-x-4 w-full text-left"

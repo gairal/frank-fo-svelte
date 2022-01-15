@@ -1,13 +1,13 @@
 <script lang="ts">
   import type { SkillByCategory } from "../../types";
-  import Card from "../Education/Card.svelte";
+  import Card from "../Card.svelte";
   import H2 from "../H2.svelte";
   import Progress from "./Progress.svelte";
 
   export let category: SkillByCategory;
 </script>
 
-<Card class="inline-block w-full mb-4">
+<Card class="w-full mb-4">
   <H2 class="mb-2 text-xl">{category.label}</H2>
   <ul>
     {#each category.skills as skill (skill.label)}
