@@ -29,7 +29,7 @@
 </header>
 
 <style>
-  p {
+  banner {
     animation: flicker 1.5s infinite alternate;
   }
 </style>
