@@ -17,14 +17,14 @@
   .loader,
   .loader:before,
   .loader:after {
-    @apply bg-pink-300;
+    @apply bg-pink-500;
     animation: loading 1s infinite ease-in-out;
     width: 1em;
     height: 4em;
   }
 
   .loader {
-    @apply relative text-pink-300 text-xs;
+    @apply relative text-pink-500 text-xs;
     text-indent: -9999em;
     margin: 88px auto;
     transform: translateZ(0);

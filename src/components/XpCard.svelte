@@ -53,10 +53,10 @@
       <div class="flex flex-col flex-1">
         <H2>{title}</H2>
         <div class="flex space-x-2 mb-3">
-          <span class="px-2 rounded bg-pink-400 text-xs"
+          <span class="px-2 rounded bg-pink-500 text-xs"
             >{inDate} - {outDate}</span
           >
-          <span class="px-2 rounded bg-pink-400 text-xs">{place}</span>
+          <span class="px-2 rounded bg-pink-500 text-xs">{place}</span>
         </div>
       </div>
       <p>{headline}</p>
