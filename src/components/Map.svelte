@@ -12,6 +12,7 @@
       clickableIcons: false,
       disableDefaultUI: true,
       gestureHandling: "none",
+      mapId: "2c0abd81847fd58d",
       zoom: 8,
     });
   });
