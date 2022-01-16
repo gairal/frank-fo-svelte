@@ -6,8 +6,6 @@
   import Card from "./Card.svelte";
   import H2 from "./H2.svelte";
 
-  let className = "";
-  export { className as class };
   export let dateIn: string;
   export let dateOut = "";
   export let description = "";
@@ -43,7 +41,7 @@
   };
 </script>
 
-<Card class={`mb-4 w-full ${className}`}>
+<Card class="mb-4 w-full hover:bg-pink-500 transition-colors">
   <button
     class:cursor-default={!description}
     class="flex space-x-4 w-full text-left"
