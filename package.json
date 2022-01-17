@@ -14,7 +14,7 @@
     "gcp-build": "yarn build",
     "lint": "eslint . --ext .js,.ts,.svelte",
     "prepare": "husky install",
-    "preview": "vite preview",
+    "preview": "yarn build && vite preview",
     "test-cov": "yarn test --collectCoverage",
     "test": "LOG_LEVEL=error jest"
   },

@@ -1,4 +1,5 @@
 /coverage/
+/dev-dist/
 /dist/
 /node_modules/
 /public/build/
