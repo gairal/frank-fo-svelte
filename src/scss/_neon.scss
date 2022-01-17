@@ -13,20 +13,20 @@
 }
 
 .border-neon {
-  @include neon-border(1px, $purple-300);
+  @include neon-border(1px, $neon-color-base);
 }
 
 .text-neon {
-  @include neon-text(2px, $purple-300, $purple-900);
+  @include neon-text(2px, $neon-color-base, $neon-color-smear);
 }
 
 @keyframes pulsate {
   100% {
-    @include neon-text(1px, $purple-300, $purple-900);
+    @include neon-text(1px, $neon-color-base, $neon-color-smear);
   }
 
   0% {
-    @include neon-text(4px, $purple-300, $purple-900);
+    @include neon-text(4px, $neon-color-base, $neon-color-smear);
   }
 }
 
@@ -38,7 +38,7 @@
   53%,
   57%,
   100% {
-    @include neon-text(2px, $purple-300, $purple-900);
+    @include neon-text(2px, $neon-color-base, $neon-color-smear);
   }
 
   20%,
