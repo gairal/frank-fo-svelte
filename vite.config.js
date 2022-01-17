@@ -6,7 +6,14 @@ export default defineConfig({
   plugins: [
     svelte(),
     VitePWA({
-      includeAssets: ["favicon.svg", "robots.txt", "img/icons/icon_128.png"],
+      devOptions: { enabled: process.env.NODE_ENV !== "production" },
+      includeAssets: [
+        "favicon.svg",
+        "robots.txt",
+        "apple-touch-icon.png",
+        "img/*.jpg",
+        "img/*.png",
+      ],
       manifest: {
         background_color: "#fff",
         description:
@@ -15,18 +22,18 @@ export default defineConfig({
         icons: [
           {
             sizes: "192x192",
-            src: "/android-chrome-192x192.png",
+            src: "/pwa-192x192.png",
             type: "image/png",
           },
           {
             sizes: "512x512",
-            src: "/android-chrome-512x512.png",
+            src: "/pwa-512x512.png",
             type: "image/png",
           },
           {
             purpose: "any maskable",
             sizes: "512x512",
-            src: "/android-chrome-512x512.png",
+            src: "/pwa-512x512.png",
             type: "image/png",
           },
         ],
