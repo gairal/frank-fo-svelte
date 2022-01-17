@@ -75,6 +75,13 @@
   <body
     class="flex flex-col bg-gradient-to-b from-indigo-900 via-purple-800 to-pink-500 p-4 md:p-8"
   >
+    <script>
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("/service-worker.js", {
+          scope: "../",
+        });
+      }
+    </script>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>

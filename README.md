@@ -4,6 +4,4 @@
 
 - [ ] delete old google cloud project
 - [ ] updated CV pdf
-- [ ] add PWA
-- [ ] re-model accomplishments
 - [ ] add accomplishments on work cards
