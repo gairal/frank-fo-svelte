@@ -20,13 +20,12 @@
     <XpCard
       dateIn={edu.dateIn}
       dateOut={edu.dateOut}
-      description={edu.extra}
       headline={edu.diploma}
       img={edu.image}
       name={edu.name}
       place={edu.place}
-      title={`${edu.name} | ${edu.shortDescription}`}
-    />
+      title={`${edu.name} | ${edu.shortDescription}`}>{edu.extra}</XpCard
+    >
   {:else}
     <Loader />
   {/each}

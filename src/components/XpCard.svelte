@@ -5,10 +5,13 @@
 
   import Card from "./Card.svelte";
   import H2 from "./H2.svelte";
+  import FoldIcon from "./icons/FoldIcon.svelte";
+  import UnfoldIcon from "./icons/UnfoldIcon.svelte";
+
+  const slots = $$props.$$slots;
 
   export let dateIn: string;
   export let dateOut = "";
-  export let description = "";
   export let headline: string;
   export let img: string;
   export let name: string;
@@ -33,23 +36,19 @@
 
   let expanded = false;
   const handleClick = () => {
-    if (!description) {
-      return;
-    }
-
     expanded = !expanded;
   };
 </script>
 
 <Card class="mb-4 w-full hover:bg-pink-500 transition-colors">
   <button
-    class:cursor-default={!description}
+    class:cursor-default={!slots}
     class="flex space-x-4 w-full text-left"
-    on:click={handleClick}
+    on:click={slots && handleClick}
     type="button"
   >
     <img class="rounded" src="img/{img}" alt={name} />
-    <div class="flex flex-col items-start">
+    <div class="flex flex-col items-start flex-1">
       <div class="flex flex-col flex-1">
         <H2>{title}</H2>
         <div class="flex space-x-2 mb-3">
@@ -61,15 +60,25 @@
       </div>
       <p>{headline}</p>
     </div>
+
+    {#if slots}
+      <div class="hidden sm:block self-center">
+        {#if expanded}
+          <FoldIcon class="w-12" />
+        {:else}
+          <UnfoldIcon class="w-12" />
+        {/if}
+      </div>
+    {/if}
   </button>
-  {#if description}
+  {#if slots}
     {#if expanded}
-      <p
+      <div
         class="pt-2 italic font-mono"
         transition:slide={{ duration: 500, easing: backOut }}
       >
-        {@html description}
-      </p>
+        <slot />
+      </div>
     {/if}
   {/if}
 </Card>

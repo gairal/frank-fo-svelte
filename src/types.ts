@@ -35,12 +35,12 @@ export interface Travel {
 }
 
 export interface Work {
-  accomplishments: string;
+  achievements: { description: string; highlights?: string[] }[];
+  company: string;
   dateIn: string;
   dateOut?: string;
   description: string;
   image: string;
-  name: string;
   place: string;
   title: string;
   website: string;
