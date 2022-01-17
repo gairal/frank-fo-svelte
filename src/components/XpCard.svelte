@@ -8,8 +8,6 @@
   import FoldIcon from "./icons/FoldIcon.svelte";
   import UnfoldIcon from "./icons/UnfoldIcon.svelte";
 
-  const slots = $$props.$$slots;
-
   export let dateIn: string;
   export let dateOut = "";
   export let headline: string;
@@ -42,9 +40,9 @@
 
 <Card class="mb-4 w-full hover:bg-pink-500 transition-colors">
   <button
-    class:cursor-default={!slots}
+    class:cursor-default={!$$slots.default}
     class="flex space-x-4 w-full text-left"
-    on:click={slots && handleClick}
+    on:click={$$slots.default ? handleClick : undefined}
     type="button"
   >
     <img class="rounded" src="img/{img}" alt={name} />
@@ -61,7 +59,7 @@
       <p>{headline}</p>
     </div>
 
-    {#if slots}
+    {#if $$slots.default}
       <div class="hidden sm:block self-center">
         {#if expanded}
           <FoldIcon class="w-12" />
@@ -71,10 +69,10 @@
       </div>
     {/if}
   </button>
-  {#if slots}
+  {#if $$slots.default}
     {#if expanded}
       <div
-        class="pt-2 italic font-mono"
+        class="font-mono text-sm"
         transition:slide={{ duration: 500, easing: backOut }}
       >
         <slot />

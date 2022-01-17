@@ -16,16 +16,30 @@
 </script>
 
 <section class="p-4 pb-0" class:h-full={!$educations.length}>
-  {#each $educations as edu (edu.name)}
-    <XpCard
-      dateIn={edu.dateIn}
-      dateOut={edu.dateOut}
-      headline={edu.diploma}
-      img={edu.image}
-      name={edu.name}
-      place={edu.place}
-      title={`${edu.name} | ${edu.shortDescription}`}>{edu.extra}</XpCard
-    >
+  {#each $educations as { dateIn, dateOut, diploma, extra, image, name, place, shortDescription } (name)}
+    {#if extra}
+      <XpCard
+        {dateIn}
+        {dateOut}
+        headline={diploma}
+        img={image}
+        {name}
+        {place}
+        title={`${name} | ${shortDescription}`}
+      >
+        <p class="pt-4">{extra}</p>
+      </XpCard>
+    {:else}
+      <XpCard
+        {dateIn}
+        {dateOut}
+        headline={diploma}
+        img={image}
+        {name}
+        {place}
+        title={`${name} | ${shortDescription}`}
+      />
+    {/if}
   {:else}
     <Loader />
   {/each}
