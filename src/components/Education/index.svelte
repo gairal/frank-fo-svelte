@@ -15,7 +15,7 @@
   });
 </script>
 
-<section class="p-4 pb-0" class:h-full={!$educations.length}>
+<section class="p-2 sm:p-4 pb-0" class:h-full={!$educations.length}>
   {#each $educations as { dateIn, dateOut, diploma, extra, image, name, place, shortDescription } (name)}
     {#if extra}
       <XpCard

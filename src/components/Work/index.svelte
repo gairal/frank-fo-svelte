@@ -15,7 +15,7 @@
   });
 </script>
 
-<section class="p-4 pb-0" class:h-full={!$works.length}>
+<section class="p-2 sm:p-4 pb-0" class:h-full={!$works.length}>
   {#each $works as { achievements, company, dateIn, dateOut, description, image, place, title } (`${company}-${dateIn}`)}
     <XpCard
       {dateIn}
@@ -26,7 +26,7 @@
       {place}
       {title}
     >
-      <ul class="pt-2 text-justify">
+      <ul class="pt-2">
         {#each achievements as achievement (achievement.description)}
           <li
             class="border border-l-2 rounded-r-sm border-transparent border-l-pink-300 hover:border-pink-300 p-1 mt-3"

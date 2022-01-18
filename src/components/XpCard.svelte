@@ -38,7 +38,7 @@
   };
 </script>
 
-<Card class="mb-4 w-full hover:bg-pink-500 transition-colors">
+<Card class="mb-2 sm:mb-4 w-full hover:bg-pink-500 transition-colors">
   <button
     class:cursor-default={!$$slots.default}
     class="flex space-x-4 w-full text-left"

@@ -4,7 +4,7 @@
 
 <button
   aria-label="menu"
-  class="p-3 rounded-full hover:bg-indigo-900 md:hidden z-20"
+  class="p-3 rounded-full hover:bg-pink-500 md:hidden z-20"
   on:click
   type="button"
 >
