@@ -1,5 +1,5 @@
 <script lang="ts">
-  import { quartOut } from "svelte/easing";
+  import { quartOut as easing } from "svelte/easing";
 
   export let level: number;
 
@@ -10,7 +10,7 @@
   ) => ({
     css: (t: number) => `width: ${width * t}%;`,
     duration,
-    easing: quartOut,
+    easing,
   });
 </script>
 

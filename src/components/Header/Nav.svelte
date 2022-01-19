@@ -1,6 +1,6 @@
 <script lang="ts">
   import { slide } from "svelte/transition";
-  import { backOut } from "svelte/easing";
+  import { quintInOut as easing } from "svelte/easing";
 
   import Link from "./Link.svelte";
 
@@ -8,11 +8,7 @@
   export { className as class };
 </script>
 
-<nav
-  class={className}
-  on:click
-  transition:slide={{ duration: 300, easing: backOut }}
->
+<nav class={className} on:click transition:slide={{ duration: 300, easing }}>
   <Link to="/">Work</Link>
   <Link to="education">Education</Link>
   <Link to="skills">Skills</Link>

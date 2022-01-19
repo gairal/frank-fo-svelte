@@ -1,6 +1,6 @@
 <script lang="ts">
   import { intlFormat } from "date-fns";
-  import { backOut } from "svelte/easing";
+  import { expoInOut as easing } from "svelte/easing";
   import { slide } from "svelte/transition";
 
   import Card from "./Card.svelte";
@@ -73,7 +73,7 @@
     {#if expanded}
       <div
         class="font-mono text-sm"
-        transition:slide={{ duration: 500, easing: backOut }}
+        transition:slide={{ duration: 500, easing }}
       >
         <slot />
       </div>
