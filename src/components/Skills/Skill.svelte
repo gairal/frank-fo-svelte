@@ -7,7 +7,7 @@
   export let category: SkillByCategory;
 </script>
 
-<Card class="w-full mb-4">
+<Card class="inline-block w-full">
   <H2 class="mb-2 text-xl">{category.label}</H2>
   <ul>
     {#each category.skills as { description, label, level } (label)}
