@@ -17,7 +17,7 @@
 
 <section class="p-4 pb-0" class:h-full={!$skills.length}>
   {#if $skills.length}
-    <div class="columns-1 md:columns-2 xl:columns-3">
+    <div class="columns-1 md:columns-2 lg:columns-3 xl:columns-4">
       {#each $skills as category (category.label)}
         <Skill {category} />
       {/each}
