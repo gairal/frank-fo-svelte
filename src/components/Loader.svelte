@@ -1,4 +1,6 @@
-<div class="h-full flex items-center"><div class="loader">Loading...</div></div>
+<div class="h-full flex items-center" role="alert" aria-busy="true">
+  <div class="loader">Loading...</div>
+</div>
 
 <style>
   @keyframes loading {

@@ -10,11 +10,11 @@ const subject = async () => {
   await screen.findByRole("link", { name: "frank g." });
 };
 
-beforeEach(() => {
-  fetchMock.mockResponse(JSON.stringify([]));
-});
+// avoid logging the network error below
+jest.spyOn(console, "error").mockReturnValue(undefined);
 
 test("displays default vue", async () => {
+  fetchMock.mockResponse(JSON.stringify([]));
   await subject();
 
   // header
@@ -31,7 +31,10 @@ test("displays default vue", async () => {
 });
 
 test("routes requests", async () => {
+  fetchMock.mockRejectOnce(Error("NETWORK ERROR"));
   await subject();
+
+  await screen.findByRole("alert");
 
   userEvent.click(await screen.findByRole("link", { name: "Education" }));
   await screen.findByRole("heading", { name: "Education" });
