@@ -16,7 +16,7 @@
     "prepare": "husky install",
     "preview": "yarn build && vite preview",
     "test-cov": "yarn test --collectCoverage",
-    "test": "LOG_LEVEL=error jest"
+    "test": "LOG_LEVEL=error jest src"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
