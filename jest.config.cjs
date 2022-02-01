@@ -2,7 +2,11 @@
 module.exports = {
   collectCoverageFrom: ["<rootDir>/src/**/*.{svelte,ts}"],
   coverageDirectory: "coverage",
-  coveragePathIgnorePatterns: ["<rootDir>/dist/", "<rootDir>/node_modules/"],
+  coveragePathIgnorePatterns: [
+    "<rootDir>/dist/",
+    "<rootDir>/node_modules/",
+    "<rootDir>/src/main.ts",
+  ],
   coverageReporters: ["html", "text", "text-summary"],
   // coverageThreshold: {
   //   global: { branches: 50, functions: 90, lines: 90, statements: 90 },
