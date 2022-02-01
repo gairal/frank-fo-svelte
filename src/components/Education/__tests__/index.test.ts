@@ -22,7 +22,7 @@ test("displays education cards", async () => {
     `${firstResult.name} | ${firstResult.shortDescription}`
   );
 
-  // loader is displayed until we get results
+  // loader is not displayed anymore after receiving result
   expect(screen.queryByRole("alert")).toBeNull();
 
   // card is closed
