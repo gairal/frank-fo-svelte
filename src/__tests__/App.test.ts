@@ -7,7 +7,7 @@ import App from "../App.svelte";
 const subject = async () => {
   render(App);
 
-  await screen.findByRole("heading", { name: "frank g." });
+  await screen.findByRole("link", { name: "frank g." });
 };
 
 beforeEach(() => {
