@@ -1,10 +1,6 @@
 runtime: nodejs16
 
 handlers:
-  - url: /assets
-    static_dir: dist/assets
-  - url: /img
-    static_dir: dist/img
   - url: /(.*\..+)$
     static_files: dist/\1
     upload: dist/(.*\..+)$

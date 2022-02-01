@@ -1,15 +1,18 @@
 .github/
 .husky/
 .vscode/
+dev-dist/
+coverage/
 node_modules/
 test/
 
+.eslintcache
 .eslintignore
-.eslintrc.js
+.eslintrc.cjs
 .gcloudignore
 .git
 .gitignore
-jest.config.js
+jest.config.cjs
 README.md
 yarn-error.log
 
