@@ -1,7 +1,7 @@
 {
   "name": "frank-fo-svelte",
   "version": "5.0.0",
-  "main": "dist/index.js",
+  "main": "dist/index.html",
   "author": "@gairal",
   "license": "MIT",
   "private": true,

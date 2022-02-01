@@ -2,9 +2,9 @@
 *
 
 # Allow files explicitly
-!dist/**
 !public/**
 !src/**
+__tests__
 
 !app.yaml
 !babel.config.cjs

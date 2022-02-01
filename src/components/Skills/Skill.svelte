@@ -8,7 +8,7 @@
 </script>
 
 <Card class="inline-block w-full">
-  <H2 class="mb-2 text-xl">{category.label}</H2>
+  <H2 class="mb-2">{category.label}</H2>
   <ul>
     {#each category.skills as { description, label, level } (label)}
       <li
