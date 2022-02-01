@@ -1,3 +1,4 @@
+/** @type {import('ts-jest').InitialOptionsTsJest} */
 module.exports = {
   collectCoverageFrom: ["<rootDir>/src/**/*.{svelte,ts}"],
   coverageDirectory: "coverage",

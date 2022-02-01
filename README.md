@@ -1,7 +1,35 @@
-# frank.gairal.com Svelte App ![workflow](https://github.com/gairal/frank-fo-svelte/actions/workflows/ci.yml/badge.svg)
+# [frank.gairal.rocks](https://frank.gairal.rocks) Svelte App ![workflow](https://github.com/gairal/frank-fo-svelte/actions/workflows/ci.yml/badge.svg)
 
-## todo
+> A PWA built with [TypeScript](https://www.typescriptlang.org/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Jest](https://jestjs.io/), [Prettier](https://prettier.io/), [eslint](https://eslint.org/) and ❤️
 
-- [ ] delete old google cloud project
-- [ ] updated CV pdf
-- [ ] add accomplishments on work cards
+## TOC
+
+- [Quick Start](#quick-start)
+- [Commands](#commands)
+
+## Quick Start
+
+```bash
+# clone the repo
+git clone git@github.com:gairal/frank-fo-svelte.git
+
+# enter the repo directory
+cd frank-fo-svelte
+
+# install the dependencies
+yarn
+
+# start the vite process
+yarn start
+
+# access the app on http://localhost:3000
+```
+
+## Commands
+
+- `yarn build`: bundles the app for production
+- `yarn dev`: launches a vite watcher
+- `yarn lint`: lints the whole sources and tests with eslint
+- `yarn start`: runs the project in production mode
+- `yarn test-cov`: runs Jest tests with coverage
+- `yarn test`: runs Jest tests

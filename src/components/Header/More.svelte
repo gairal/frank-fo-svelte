@@ -6,6 +6,7 @@
   import EmailIcon from "../icons/EmailIcon.svelte";
   import LinkIcon from "../icons/LinkIcon.svelte";
   import MoreIcon from "../icons/MoreIcon.svelte";
+  import ResumeIcon from "../icons/ResumeIcon.svelte";
 
   let showMore = false;
   let button;
@@ -54,7 +55,7 @@
           tabindex="-1"><LinkIcon class="fill-current" fill="" />LinkedIn</a
         >
       </li>
-      <!-- <li class="hover:text-pink-500">
+      <li class="hover:text-pink-500">
         <a
           class="flex w-full p-3 justify-between"
           href="/pdf/frank.gairal.pdf"
@@ -64,7 +65,7 @@
           title="CV"
           tabindex="-1"><ResumeIcon class="fill-current" fill="" />resume.pdf</a
         >
-      </li> -->
+      </li>
       <li
         class="flex w-full p-3 justify-between hover:text-pink-500 border-t border-t-pink-500"
       >
