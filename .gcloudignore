@@ -1,19 +1,18 @@
-.github/
-.husky/
-.vscode/
-dev-dist/
-coverage/
-node_modules/
-test/
+# Ignore everything by default
+*
 
-.eslintcache
-.eslintignore
-.eslintrc.cjs
-.gcloudignore
-.git
-.gitignore
-jest.config.cjs
-README.md
-yarn-error.log
+# Allow files explicitly
+!dist/**
+!public/**
+!src/**
 
-
+!app.yaml
+!babel.config.cjs
+!index.html
+!package.json
+!postcss.config.cjs
+!svelte.config.js
+!tailwind.config.cjs
+!tsconfig.json
+!vite.config.js
+!yarn.lock
