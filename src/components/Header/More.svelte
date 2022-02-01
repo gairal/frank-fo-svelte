@@ -2,6 +2,7 @@
   import { fade } from "svelte/transition";
   import ClickOutside from "svelte-click-outside/src/index.svelte";
 
+  import { BUCKET_URL } from "../../constants";
   import BuildIcon from "../icons/BuildIcon.svelte";
   import EmailIcon from "../icons/EmailIcon.svelte";
   import LinkIcon from "../icons/LinkIcon.svelte";
@@ -58,7 +59,7 @@
       <li class="hover:text-pink-500">
         <a
           class="flex w-full p-3 justify-between"
-          href="/pdf/frank.gairal.pdf"
+          href="{BUCKET_URL}/pdf/frank.gairal.pdf"
           download=""
           target="_blank"
           rel="noopener noreferrer"

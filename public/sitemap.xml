@@ -7,52 +7,12 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
         <mobile:mobile/>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/bk.png</image:loc>
-            <image:caption>Backelite</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/phonereader.png</image:loc>
-            <image:caption>Phonereader</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/alyzair.png</image:loc>
-            <image:caption>Alyzair</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/orange.png</image:loc>
-            <image:caption>Orange</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/ratp.png</image:loc>
-            <image:caption>RATP</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/efrei.png</image:loc>
-            <image:caption>EFREI</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/ekino.png</image:loc>
-            <image:caption>Ekino</image:caption>
-        </image:image>
     </url>
     <url>
         <loc>https://frank.gairal.rocks/education</loc>
         <changefreq>yearly</changefreq>
         <priority>0.5</priority>
         <mobile:mobile/>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/enc.jpg</image:loc>
-            <image:caption>Ecole Nationale du Commerce</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/spf.png</image:loc>
-            <image:caption>Institut Saint-Pierre Fourier</image:caption>
-        </image:image>
-        <image:image>
-            <image:loc>https://frank.gairal.rocks/img/efrei.png</image:loc>
-            <image:caption>EFREI</image:caption>
-        </image:image>
     </url>
     <url>
         <loc>https://frank.gairal.rocks/interests</loc>
@@ -65,10 +25,5 @@
         <changefreq>monthly</changefreq>
         <priority>0.5</priority>
         <mobile:mobile/>
-    </url>
-    <url>
-        <loc>https://frank.gairal.rocks/pdf/frank.gairal.pdf</loc>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
     </url>
 </urlset>
