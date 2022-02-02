@@ -46,15 +46,21 @@
     on:click={$$slots.default ? handleClick : undefined}
     type="button"
   >
-    <img class="rounded" src="{BUCKET_URL}/img/{img}" alt={name} />
+    <img
+      class="rounded"
+      alt={name}
+      height="100"
+      src="{BUCKET_URL}/img/{img}"
+      width="100"
+    />
     <div class="flex flex-col items-start flex-1">
       <div class="flex flex-col flex-1">
         <H2>{title}</H2>
         <div class="flex space-x-2 mb-3">
-          <span class="px-2 rounded bg-pink-500 text-xs"
+          <span class="px-2 rounded bg-pink-600 text-xs"
             >{inDate} - {outDate}</span
           >
-          <span class="px-2 rounded bg-pink-500 text-xs">{place}</span>
+          <span class="px-2 rounded bg-pink-600 text-xs">{place}</span>
         </div>
       </div>
       <p>{headline}</p>

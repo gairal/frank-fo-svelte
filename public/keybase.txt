@@ -1,0 +1,56 @@
+​==================================================================
+https://keybase.io/gairal
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://frank.gairal.com
+  * I am gairal (https://keybase.io/gairal) on keybase.
+  * I have a public key ASCEKSXHtGKDKZIlYuW_9EPZUQ0xig3l7POjvGczvUCFtAo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01201f05f5dae132f5617ad4351e8c53e450424cba7e04e0800a9dc8abcbad9493d10a",
+      "host": "keybase.io",
+      "kid": "0120842925c7b4628329922562e5bff443d9510d318a0de5ecf3a3bc6733bd4085b40a",
+      "uid": "cf154a112a15020cd0c51dbf2d686319",
+      "username": "gairal"
+    },
+    "merkle_root": {
+      "ctime": 1643810988,
+      "hash": "f1027e3344fc8243adb0fb26c9e2a63e93643407cf16f1f1ad6fa7a39a0fed3f938786f3258128cfa7926614123d2a2383af5f7b6e22d0c71a7f781511b36131",
+      "hash_meta": "85b41d419124afebacadea7624ef2300898b0b904e6d7453743adac7fa2770b8",
+      "seqno": 21779460
+    },
+    "service": {
+      "entropy": "ItC39uYGz43yoZkufGgegpli",
+      "hostname": "frank.gairal.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.9.0"
+  },
+  "ctime": 1643811038,
+  "expire_in": 504576000,
+  "prev": "50d296c828d47d8c5bbabc4deb44250347024e1e8d71b128793a6bc78deb2f2b",
+  "seqno": 46,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEghCklx7RigymSJWLlv/RD2VENMYoN5ezzo7xnM71AhbQKp3BheWxvYWTESpcCLsQgUNKWyCjUfYxburxN60QlA0cCTh6NcbEoeTprx43rLyvEIIAxqBZajNmoQl9kO8u4t+Ka5d2iM+/bmyZBTLBdUIS9AgHCo3NpZ8RAGJUJGVizJ7K+0IxaR9SO5wfD0wlRcn1Ok68KkVNUbkM6eLa9qr1okRT+ko+3aPsa8vgoLC1xE2I1D9XpUxBaBqhzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIN3aDp7wpNb1LDJ9iw6pS6CcINB+vT/wqr2bsZKx9tNUo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/gairal
+
+==================================================================
