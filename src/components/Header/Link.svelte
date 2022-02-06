@@ -5,7 +5,7 @@
   export let to: string;
 
   const getProps = ({ isCurrent }: GetPropsParams) => ({
-    class: `flex justify-center item-center p-3 rounded-xl bg-indigo-900 nav-link${
+    class: `flex justify-center items-center p-3 rounded-xl bg-indigo-900 nav-link${
       isCurrent ? " nav-link--active" : ""
     }`,
   });
