@@ -14,6 +14,7 @@
       label: "Analytics cookies",
       value: true,
     },
+    marketing: false,
     necessary: {
       description: "Used for cookie control. Can't be turned off.",
       label: "Necessary cookies",
