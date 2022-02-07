@@ -63,12 +63,7 @@ module.exports = {
       },
     },
   ],
-  plugins: [
-    "svelte3",
-    "no-only-tests",
-    "typescript-sort-keys",
-    "eslint-plugin-sort-keys-fix",
-  ],
+  plugins: ["svelte3", "typescript-sort-keys", "eslint-plugin-sort-keys-fix"],
   rules: {
     "@typescript-eslint/naming-convention": [
       "error",
@@ -102,7 +97,6 @@ module.exports = {
       },
     ],
     "import/prefer-default-export": 0,
-    "no-only-tests/no-only-tests": 2,
     "sort-keys-fix/sort-keys-fix": 1,
   },
   settings: {

@@ -16,7 +16,7 @@
     "prepare": "husky install",
     "preview": "yarn build && vite preview",
     "test-cov": "yarn test --collectCoverage",
-    "test": "LOG_LEVEL=error jest src"
+    "test": "LOG_LEVEL=error jest"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -28,13 +28,13 @@
     "@testing-library/user-event": "^13.0.0",
     "@tsconfig/svelte": "^3.0.0",
     "@types/google.maps": "^3.0.0",
+    "@types/gtag.js": "^0.0.8",
     "@types/jest": "^27.0.0",
     "autoprefixer": "^10.0.0",
     "babel-jest": "^27.0.0",
     "eslint": "^8.0.0",
     "eslint-config-airbnb-typescript-prettier": "^5.0.0",
     "eslint-plugin-jest": "^26.0.0",
-    "eslint-plugin-no-only-tests": "^2.0.0",
     "eslint-plugin-sort-keys-fix": "^1.0.0",
     "eslint-plugin-svelte3": "^3.0.0",
     "eslint-plugin-testing-library": "^5.0.0",
