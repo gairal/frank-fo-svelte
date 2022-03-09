@@ -26,5 +26,6 @@ test("can open the more menu", async () => {
 
   await screen.findByRole("link", { name: "frank@gairal.com" });
   await screen.findByRole("link", { name: "LinkedIn" });
+  await screen.findByRole("link", { name: "Github" });
   await screen.findByText("v5.0.0-svelte");
 });

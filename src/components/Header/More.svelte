@@ -5,6 +5,7 @@
   import { BUCKET_URL } from "../../constants";
   import BuildIcon from "../icons/BuildIcon.svelte";
   import EmailIcon from "../icons/EmailIcon.svelte";
+  import GithubIcon from "../icons/GithubIcon.svelte";
   import LinkIcon from "../icons/LinkIcon.svelte";
   import MoreIcon from "../icons/MoreIcon.svelte";
   import ResumeIcon from "../icons/ResumeIcon.svelte";
@@ -65,6 +66,16 @@
           rel="noopener noreferrer"
           title="CV"
           tabindex="-1"><ResumeIcon class="fill-current" fill="" />resume.pdf</a
+        >
+      </li>
+      <li class="hover:text-pink-500">
+        <a
+          class="flex w-full p-3 justify-between"
+          href="https://github.com/gairal"
+          target="_blank"
+          rel="noopener noreferrer"
+          title="Github"
+          tabindex="-1"><GithubIcon class="fill-current" fill="" />Github</a
         >
       </li>
       <li
