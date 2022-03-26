@@ -47,7 +47,7 @@
     type="button"
   >
     <img
-      class="rounded"
+      class="rounded bg-purple-200 p-1"
       alt={name}
       height="100"
       src="{BUCKET_URL}/img/{img}"
