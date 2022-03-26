@@ -49,9 +49,9 @@
     <img
       class="rounded bg-purple-200 p-1"
       alt={name}
-      height="100"
       src="{BUCKET_URL}/img/{img}"
       width="100"
+      style="height: 100px;"
     />
     <div class="flex flex-col items-start flex-1">
       <div class="flex flex-col flex-1">
