@@ -27,7 +27,7 @@ bun start
 
 ## Commands
 
-- `bun build`: bundles the app for production
+- `bun run build`: bundles the app for production
 - `bun dev`: launches a vite watcher
 - `bun lint`: lints the whole sources and tests with eslint
 - `bun start`: runs the project in production mode
