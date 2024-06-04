@@ -62,7 +62,7 @@
     "date-fns": "^2.0.0",
     "svelte": "^3.49.0",
     "svelte-click-outside": "^1.0.0",
-    "svelte-routing": "^1.0.0"
+    "svelte-routing": "^2.13.0"
   },
   "lint-staged": {
     "*.{js,cjs,ts,svelte}": [
