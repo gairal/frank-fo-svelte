@@ -1,11 +1,13 @@
 # Ignore everything by default
-*
+
+-
 
 # Allow files explicitly
+
 !dist/**
 !public/**
-!src/**
-__tests__
+!src/\*\*
+**tests**
 
 !app.yaml
 !babel.config.cjs
@@ -17,3 +19,4 @@ __tests__
 !tsconfig.json
 !vite.config.js
 !yarn.lock
+!bun.lockb

@@ -17,19 +17,19 @@ git clone git@github.com:gairal/frank-fo-svelte.git
 cd frank-fo-svelte
 
 # install the dependencies
-yarn
+bun i
 
 # start the vite process
-yarn start
+bun start
 
 # access the app on http://localhost:3000
 ```
 
 ## Commands
 
-- `yarn build`: bundles the app for production
-- `yarn dev`: launches a vite watcher
-- `yarn lint`: lints the whole sources and tests with eslint
-- `yarn start`: runs the project in production mode
-- `yarn test-cov`: runs Jest tests with coverage
-- `yarn test`: runs Jest tests
+- `bun build`: bundles the app for production
+- `bun dev`: launches a vite watcher
+- `bun lint`: lints the whole sources and tests with eslint
+- `bun start`: runs the project in production mode
+- `bun test-cov`: runs Jest tests with coverage
+- `bun run test`: runs Jest tests

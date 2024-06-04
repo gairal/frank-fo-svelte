@@ -9,13 +9,13 @@
   "scripts": {
     "build": "vite build",
     "check": "svelte-check --tsconfig ./tsconfig.json",
-    "deploy": "yarn build && gcloud app deploy --project com-gairal-frank-22",
+    "deploy": "bun build && gcloud app deploy --project com-gairal-frank-22",
     "dev": "vite",
-    "gcp-build": "yarn build",
+    "gcp-build": "bun build",
     "lint": "eslint . --ext .js,.ts,.svelte",
     "prepare": "husky install",
-    "preview": "yarn build && vite preview",
-    "test-cov": "yarn test --collectCoverage",
+    "preview": "bun build && vite preview",
+    "test-cov": "bun run test --collectCoverage",
     "test": "LOG_LEVEL=error jest"
   },
   "devDependencies": {
