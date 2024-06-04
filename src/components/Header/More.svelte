@@ -36,12 +36,13 @@
     >
       <li class="hover:text-pink-500">
         <a
+          aria-label="frank@gairal.com"
           class="flex w-full p-3 justify-between"
           href="mailto:frank@gairal.com"
           rel="noopener noreferrer"
-          title="frank@gairal.com"
-          target="_blank"
           tabindex="0"
+          target="_blank"
+          title="frank@gairal.com"
           ><EmailIcon class="fill-current" fill="" /><span class="ml-2"
             >frank@gairal.com</span
           ></a
@@ -49,12 +50,13 @@
       </li>
       <li class="hover:text-pink-500">
         <a
+          aria-label="LinkedIn"
           class="flex w-full p-3 justify-between"
           href="https://linkedin.com/in/gairal"
-          target="_blank"
           rel="noopener noreferrer"
-          title="LinkedIn"
-          tabindex="-1"><LinkIcon class="fill-current" fill="" />LinkedIn</a
+          tabindex="-1"
+          target="_blank"
+          title="LinkedIn"><LinkIcon class="fill-current" fill="" />LinkedIn</a
         >
       </li>
       <li class="hover:text-pink-500">
@@ -70,6 +72,7 @@
       </li>
       <li class="hover:text-pink-500">
         <a
+          aria-label="Github"
           class="flex w-full p-3 justify-between"
           href="https://github.com/gairal"
           target="_blank"
