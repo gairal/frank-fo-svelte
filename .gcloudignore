@@ -18,5 +18,4 @@
 !tailwind.config.cjs
 !tsconfig.json
 !vite.config.js
-!yarn.lock
 !bun.lockb
