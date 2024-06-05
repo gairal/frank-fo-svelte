@@ -60,7 +60,7 @@
   "dependencies": {
     "@beyonk/gdpr-cookie-consent-banner": "^9.0.3",
     "date-fns": "^3.6.0",
-    "svelte": "^3.49.0",
+    "svelte": "^4.2.0",
     "svelte-click-outside": "^1.0.0",
     "svelte-routing": "^2.13.0"
   },
