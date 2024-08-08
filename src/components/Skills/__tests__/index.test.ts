@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/svelte";
-import fetchMock from "jest-fetch-mock";
+import { expect, test } from "vitest";
 
 import { skillsFixtures } from "../../../../test/fixtures/skill";
 import Skills from "../index.svelte";

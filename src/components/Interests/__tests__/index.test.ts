@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/svelte";
-import fetchMock from "jest-fetch-mock";
+import { beforeEach, test } from "vitest";
 
 import { interestsFixture } from "../../../../test/fixtures/interest";
 import { travelsFixture } from "../../../../test/fixtures/travel";

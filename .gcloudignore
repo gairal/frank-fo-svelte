@@ -8,7 +8,6 @@
 __tests__
 
 !app.yaml
-!babel.config.cjs
 !index.html
 !package.json
 !postcss.config.cjs

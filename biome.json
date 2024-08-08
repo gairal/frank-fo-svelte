@@ -23,15 +23,7 @@
     }
   },
   "javascript": {
-    "globals": [
-      "afterEach",
-      "beforeEach",
-      "describe",
-      "expect",
-      "fetchMock",
-      "it",
-      "test"
-    ]
+    "globals": ["fetchMock"]
   },
   "overrides": [
     {

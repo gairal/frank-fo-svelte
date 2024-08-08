@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/svelte";
 import userEvent from "@testing-library/user-event";
-import fetchMock from "jest-fetch-mock";
+import { expect, test } from "vitest";
 
 import { educationsFixture } from "../../../../test/fixtures/education";
 import Education from "../index.svelte";

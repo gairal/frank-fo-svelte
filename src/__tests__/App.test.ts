@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/svelte";
 import userEvent from "@testing-library/user-event";
-import fetchMock from "jest-fetch-mock";
+import { test, vi } from "vitest";
 
 import App from "../App.svelte";
 
@@ -15,7 +15,7 @@ const subject = async () => {
 };
 
 // avoid logging the network error below
-jest.spyOn(console, "error").mockReturnValue(undefined);
+vi.spyOn(console, "error").mockReturnValue(undefined);
 
 /**
  * the addition of the cookie consent brakes these tests

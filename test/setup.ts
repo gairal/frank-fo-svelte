@@ -1,3 +1,10 @@
-import { enableFetchMocks } from "jest-fetch-mock";
+import "@testing-library/jest-dom/vitest";
 
-enableFetchMocks();
+import { afterEach, vi } from "vitest";
+import createFetchMock from "vitest-fetch-mock";
+
+createFetchMock(vi).enableMocks();
+
+afterEach(() => {
+  fetchMock.mockClear();
+});
