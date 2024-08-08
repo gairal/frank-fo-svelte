@@ -1,7 +1,6 @@
 import { render, screen } from "@testing-library/svelte";
 import { beforeEach, test } from "vitest";
 
-
 import { interestsFixture } from "../../../../test/fixtures/interest";
 import { travelsFixture } from "../../../../test/fixtures/travel";
 import Interests from "../index.svelte";

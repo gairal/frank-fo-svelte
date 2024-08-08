@@ -1,6 +1,6 @@
 import { render, screen } from "@testing-library/svelte";
 import userEvent from "@testing-library/user-event";
-import { vi, test } from "vitest";
+import { test, vi } from "vitest";
 
 import App from "../App.svelte";
 
