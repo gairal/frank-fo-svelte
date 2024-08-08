@@ -1,9 +1,9 @@
 <script lang="ts">
-  import GdprBanner from "@beyonk/gdpr-cookie-consent-banner";
+import GdprBanner from "@beyonk/gdpr-cookie-consent-banner";
 
-  const initAnalytics = () => {
-    window.gtag("consent", "update", { analytics_storage: "granted" });
-  };
+const initAnalytics = () => {
+  window.gtag("consent", "update", { analytics_storage: "granted" });
+};
 </script>
 
 <GdprBanner

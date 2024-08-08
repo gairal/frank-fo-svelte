@@ -1,10 +1,10 @@
 <script lang="ts">
-  import type { SkillByCategory } from "../../types";
-  import Card from "../Card.svelte";
-  import H2 from "../H2.svelte";
-  import Progress from "./Progress.svelte";
+import type { SkillByCategory } from "../../types";
+import Card from "../Card.svelte";
+import H2 from "../H2.svelte";
+import Progress from "./Progress.svelte";
 
-  export let category: SkillByCategory;
+export let category: SkillByCategory;
 </script>
 
 <Card class="inline-block w-full">

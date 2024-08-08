@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { title } from "../stores/appStore";
+import { title } from "../stores/appStore";
 
-  let pageTitle: string;
-  $: {
-    pageTitle = $title ? `Frank Gairal \u2014 ${$title}` : "Frank Gairal";
-    document.title = pageTitle;
-  }
+let pageTitle: string;
+$: {
+  pageTitle = $title ? `Frank Gairal \u2014 ${$title}` : "Frank Gairal";
+  document.title = pageTitle;
+}
 </script>
 
 <svelte:head>

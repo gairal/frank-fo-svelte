@@ -1,17 +1,16 @@
 <script lang="ts">
-  import { quartOut as easing } from "svelte/easing";
+import { quartOut as easing } from "svelte/easing";
 
-  export let level: number;
+export let level: number;
 
-  const expand = (
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    node: Element,
-    { duration, width }: { duration: number; width: number }
-  ) => ({
-    css: (t: number) => `width: ${width * t}%;`,
-    duration,
-    easing,
-  });
+const expand = (
+  node: Element,
+  { duration, width }: { duration: number; width: number },
+) => ({
+  css: (t: number) => `width: ${width * t}%;`,
+  duration,
+  easing,
+});
 </script>
 
 <div

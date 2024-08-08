@@ -1,8 +1,8 @@
 import { render, screen } from "@testing-library/svelte";
 import fetchMock from "jest-fetch-mock";
 
-import Skills from "../index.svelte";
 import { skillsFixtures } from "../../../../test/fixtures/skill";
+import Skills from "../index.svelte";
 
 const fixture = skillsFixtures();
 const firstResult = fixture[0];

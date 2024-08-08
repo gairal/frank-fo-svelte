@@ -1,18 +1,18 @@
 <script lang="ts">
-  import { onMount } from "svelte";
+import { onMount } from "svelte";
 
-  import { fetchData } from "../../fetch";
-  import { educations, title } from "../../stores/index";
-  import Loader from "../Loader.svelte";
-  import XpCard from "../XpCard.svelte";
+import { fetchData } from "../../fetch";
+import { educations, title } from "../../stores/index";
+import Loader from "../Loader.svelte";
+import XpCard from "../XpCard.svelte";
 
-  onMount(() => {
-    title.set("Education");
+onMount(() => {
+  title.set("Education");
 
-    if (!$educations.length) {
-      fetchData("educations", educations);
-    }
-  });
+  if (!$educations.length) {
+    fetchData("educations", educations);
+  }
+});
 </script>
 
 <section class="p-2 sm:p-4 pb-0" class:h-full={!$educations.length}>

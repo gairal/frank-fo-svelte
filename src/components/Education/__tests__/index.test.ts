@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/svelte";
-import fetchMock from "jest-fetch-mock";
 import userEvent from "@testing-library/user-event";
+import fetchMock from "jest-fetch-mock";
 
-import Education from "../index.svelte";
 import { educationsFixture } from "../../../../test/fixtures/education";
+import Education from "../index.svelte";
 
 const fixture = educationsFixture();
 const firstResult = fixture[0];
@@ -23,7 +23,7 @@ test("displays education cards", async () => {
   await screen.findByRole("alert");
 
   await screen.findByText(
-    `${firstResult.name} | ${firstResult.shortDescription}`
+    `${firstResult.name} | ${firstResult.shortDescription}`,
   );
 
   // loader is not displayed anymore after receiving result

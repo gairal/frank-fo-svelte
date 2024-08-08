@@ -15,7 +15,7 @@ test("can open the navigation menu", async () => {
   await user.click(await screen.findByRole("button", { name: "menu" }));
 
   await waitFor(() =>
-    expect(screen.getAllByRole("link", { name: "Work" })).toHaveLength(2)
+    expect(screen.getAllByRole("link", { name: "Work" })).toHaveLength(2),
   );
 
   expect(screen.getAllByRole("link", { name: "Education" })).toHaveLength(2);

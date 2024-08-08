@@ -1,11 +1,11 @@
 <script lang="ts">
-  import { slide } from "svelte/transition";
-  import { quintInOut as easing } from "svelte/easing";
+import { quintInOut as easing } from "svelte/easing";
+import { slide } from "svelte/transition";
 
-  import Link from "./Link.svelte";
+import Link from "./Link.svelte";
 
-  let className: string;
-  export { className as class };
+let className: string;
+export { className as class };
 </script>
 
 <nav class={className} on:click transition:slide={{ duration: 300, easing }}>

@@ -1,7 +1,7 @@
 <script lang="ts">
-  let className = "";
-  export { className as class };
-  export let fill = "#ffffff";
+let className = "";
+export { className as class };
+export let fill = "#ffffff";
 </script>
 
 <svg

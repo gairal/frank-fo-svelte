@@ -1,5 +1,5 @@
 <script lang="ts">
-  import MenuIcon from "../icons/MenuIcon.svelte";
+import MenuIcon from "../icons/MenuIcon.svelte";
 </script>
 
 <button
