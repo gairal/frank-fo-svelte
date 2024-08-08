@@ -3,11 +3,11 @@
   "compilerOptions": {
     "baseUrl": ".",
     "forceConsistentCasingInFileNames": true,
-    "module": "esnext",
+    "module": "ESNext",
     "moduleResolution": "Node",
     "resolveJsonModule": false,
     "strict": true,
-    "target": "esnext",
+    "target": "ESNext",
     "useDefineForClassFields": true,
     /**
      * Typecheck JS in `.svelte` and `.js` files by default.
