@@ -1,21 +1,21 @@
 <script lang="ts">
-  import { fade } from "svelte/transition";
-  import ClickOutside from "svelte-click-outside/src/index.svelte";
+import { fade } from "svelte/transition";
+import ClickOutside from "svelte-click-outside/src/index.svelte";
 
-  import { BUCKET_URL } from "../../constants";
-  import BuildIcon from "../icons/BuildIcon.svelte";
-  import EmailIcon from "../icons/EmailIcon.svelte";
-  import GithubIcon from "../icons/GithubIcon.svelte";
-  import LinkIcon from "../icons/LinkIcon.svelte";
-  import MoreIcon from "../icons/MoreIcon.svelte";
-  import ResumeIcon from "../icons/ResumeIcon.svelte";
+import { BUCKET_URL } from "../../constants";
+import BuildIcon from "../icons/BuildIcon.svelte";
+import EmailIcon from "../icons/EmailIcon.svelte";
+import GithubIcon from "../icons/GithubIcon.svelte";
+import LinkIcon from "../icons/LinkIcon.svelte";
+import MoreIcon from "../icons/MoreIcon.svelte";
+import ResumeIcon from "../icons/ResumeIcon.svelte";
 
-  let showMore = false;
-  let button;
+let showMore = false;
+let button;
 
-  const toggleMore = () => {
-    showMore = !showMore;
-  };
+const toggleMore = () => {
+  showMore = !showMore;
+};
 </script>
 
 <button

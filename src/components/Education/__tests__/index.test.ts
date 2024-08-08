@@ -23,7 +23,7 @@ test("displays education cards", async () => {
   await screen.findByRole("alert");
 
   await screen.findByText(
-    `${firstResult.name} | ${firstResult.shortDescription}`
+    `${firstResult.name} | ${firstResult.shortDescription}`,
   );
 
   // loader is not displayed anymore after receiving result

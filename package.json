@@ -16,7 +16,8 @@
     "prepare": "husky",
     "preview": "bun run build && vite preview",
     "test-cov": "bun run test --collectCoverage",
-    "test": "LOG_LEVEL=error jest"
+    "test": "LOG_LEVEL=error jest",
+    "typecheck": "tsc --noEmit",
   },
   "devDependencies": {
     "@babel/core": "^7.24.0",
@@ -58,11 +59,7 @@
     "svelte-routing": "^2.13.0"
   },
   "lint-staged": {
-    "*.{js,cjs,ts,svelte}": [
-      "eslint --cache --fix"
-    ],
-    "*.{json,scss,css,md}": [
-      "prettier --write"
-    ]
-  }
+    "*.{ts,type-check}": ["bun typecheck"],
+    "*.{js,cjs,json,ts,svelte,css,css,md}": ["bun lint --fix"]
+    }
 }
