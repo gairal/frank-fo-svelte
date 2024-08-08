@@ -14,12 +14,23 @@
     "rules": {
       "all": true,
       "nursery": {
-        "all": true
-      }
+        "all": true,
+        "useExplicitLengthCheck": "off",
+        "useImportExtensions": "off",
+        "useImportRestrictions": "off"
+      },
+      "performance": { "noBarrelFile": "off", "noReExportAll": "off" }
     }
   },
   "javascript": {
-    "globals": ["afterAll", "beforeAll", "describe", "expect", "it"]
+    "globals": [
+      "afterAll",
+      "beforeAll",
+      "describe",
+      "expect",
+      "it",
+      "fetchMock"
+    ]
   },
   "overrides": [
     {
@@ -33,7 +44,8 @@
           },
           "style": {
             "noRestrictedGlobals": "off",
-            "useConst": "off"
+            "useConst": "off",
+            "useFilenamingConvention": "off"
           },
           "suspicious": {
             "noGlobalAssign": "off"
@@ -42,7 +54,13 @@
       }
     },
     {
-      "include": ["lint-staged.config.js"],
+      "include": ["lint-staged.config.js", "vite.config.js"],
+      "linter": {
+        "rules": { "style": { "useFilenamingConvention": "off" } }
+      }
+    },
+    {
+      "include": ["**/*.test.ts"],
       "linter": {
         "rules": { "style": { "useFilenamingConvention": "off" } }
       }

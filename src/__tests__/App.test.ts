@@ -38,7 +38,7 @@ test.skip("displays default vue", async () => {
 });
 
 test.skip("routes requests", async () => {
-  fetchMock.mockRejectOnce(Error("NETWORK ERROR"));
+  fetchMock.mockRejectOnce(new Error("NETWORK ERROR"));
   const user = await subject();
 
   await screen.findByRole("alert");

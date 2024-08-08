@@ -9,4 +9,5 @@ registerSW();
 // @ts-expect-error adding initMap onto the window
 window.initMap = () => isMapReady.set(true);
 
+// biome-ignore lint/style/noDefaultExport: <explanation>
 export default new App({ target: document.body });

@@ -9,6 +9,7 @@ export const fetchData = async <T>(path: string, store: Writable<T[]>) => {
     const data = await fetch(url.href).then((response) => response.json());
     store.set(data);
   } catch (e) {
+    // biome-ignore lint/nursery/noConsole: exception
     console.error(e);
   }
 };

@@ -2,6 +2,7 @@
 import GdprBanner from "@beyonk/gdpr-cookie-consent-banner";
 
 const initAnalytics = () => {
+  // biome-ignore lint/style/useNamingConvention: no alternative
   window.gtag("consent", "update", { analytics_storage: "granted" });
 };
 </script>
