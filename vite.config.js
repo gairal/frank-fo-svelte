@@ -1,10 +1,13 @@
+/// <reference types="vitest" />
 import { svelte } from "@sveltejs/vite-plugin-svelte";
+import { svelteTesting } from "@testing-library/svelte/vite";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
   plugins: [
     svelte(),
+    svelteTesting(),
     VitePWA({
       devOptions: { enabled: process.env.NODE_ENV !== "production" },
       includeAssets: [
@@ -46,4 +49,21 @@ export default defineConfig({
       },
     }),
   ],
+  test: {
+    coverage: {
+      reporter: ["text", "html", "json-summary", "json"],
+      reportOnFailure: true,
+      thresholds: {
+        lines: 90,
+        branches: 80,
+        functions: 80,
+        statements: 80,
+      },
+      include: ["src/**"],
+      exclude: ["src/**/*.d.ts"],
+    },
+    environment: "happy-dom",
+    include: ["src/**/*.test.ts"],
+    setupFiles: ["./test/setup.ts"],
+  },
 });

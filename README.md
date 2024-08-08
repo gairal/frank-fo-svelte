@@ -31,5 +31,5 @@ bun start
 - `bun dev`: launches a vite watcher
 - `bun lint`: lints the whole sources and tests with biome
 - `bun start`: runs the project in production mode
-- `bun test-cov`: runs Jest tests with coverage
-- `bun run test`: runs Jest tests
+- `bun test-cov`: runs vitest tests with coverage
+- `bun run test`: runs vitest tests
