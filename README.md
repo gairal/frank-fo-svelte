@@ -1,6 +1,6 @@
 # [frank.gairal.rocks](https://frank.gairal.rocks) Svelte App ![workflow](https://github.com/gairal/frank-fo-svelte/actions/workflows/ci.yml/badge.svg)
 
-> A PWA built with [TypeScript](https://www.typescriptlang.org/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Jest](https://jestjs.io/), [Prettier](https://prettier.io/), [eslint](https://eslint.org/) and ❤️
+> A PWA built with [TypeScript](https://www.typescriptlang.org/), [Svelte](https://svelte.dev/), [Vite](https://vitejs.dev/), [Vitest](https://vitest.dev), [bun](https://bun.sh/), [biome](https://biomejs.dev/) and ❤️
 
 ## TOC
 
@@ -29,7 +29,7 @@ bun start
 
 - `bun run build`: bundles the app for production
 - `bun dev`: launches a vite watcher
-- `bun lint`: lints the whole sources and tests with eslint
+- `bun lint`: lints the whole sources and tests with biome
 - `bun start`: runs the project in production mode
 - `bun test-cov`: runs Jest tests with coverage
 - `bun run test`: runs Jest tests

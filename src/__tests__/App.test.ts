@@ -5,9 +5,13 @@ import fetchMock from "jest-fetch-mock";
 import App from "../App.svelte";
 
 const subject = async () => {
+  const user = userEvent.setup();
+
   render(App);
 
   await screen.findByRole("link", { name: "frank g." });
+
+  return user;
 };
 
 // avoid logging the network error below
@@ -34,17 +38,17 @@ test.skip("displays default vue", async () => {
 });
 
 test.skip("routes requests", async () => {
-  fetchMock.mockRejectOnce(Error("NETWORK ERROR"));
-  await subject();
+  fetchMock.mockRejectOnce(new Error("NETWORK ERROR"));
+  const user = await subject();
 
   await screen.findByRole("alert");
 
-  userEvent.click(await screen.findByRole("link", { name: "Education" }));
+  user.click(await screen.findByRole("link", { name: "Education" }));
   await screen.findByRole("heading", { name: "Education" });
 
-  userEvent.click(await screen.findByRole("link", { name: "Skills" }));
+  user.click(await screen.findByRole("link", { name: "Skills" }));
   await screen.findByRole("heading", { name: "Skills" });
 
-  userEvent.click(await screen.findByRole("link", { name: "Interests" }));
+  user.click(await screen.findByRole("link", { name: "Interests" }));
   await screen.findByRole("heading", { name: "Interests" });
 });

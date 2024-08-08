@@ -1,16 +1,16 @@
 <script lang="ts">
-  import { link, Router } from "svelte-routing";
+import { Router, link } from "svelte-routing";
 
-  import { title } from "../../stores/appStore";
-  import Menu from "./Menu.svelte";
-  import More from "./More.svelte";
-  import Nav from "./Nav.svelte";
+import { title } from "../../stores/appStore";
+import Menu from "./Menu.svelte";
+import More from "./More.svelte";
+import Nav from "./Nav.svelte";
 
-  let expanded = false;
+let expanded = false;
 
-  const handleClick = () => {
-    expanded = !expanded;
-  };
+const handleClick = () => {
+  expanded = !expanded;
+};
 </script>
 
 <Router>

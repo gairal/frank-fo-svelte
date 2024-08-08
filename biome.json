@@ -1,0 +1,70 @@
+{
+  "$schema": "https://biomejs.dev/schemas/1.8.3/schema.json",
+  "files": {
+    "ignore": ["dist", "node_modules"]
+  },
+  "formatter": {
+    "indentStyle": "space"
+  },
+  "organizeImports": {
+    "enabled": true
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "all": true,
+      "nursery": {
+        "all": true,
+        "useExplicitLengthCheck": "off",
+        "useImportExtensions": "off",
+        "useImportRestrictions": "off"
+      },
+      "performance": { "noBarrelFile": "off", "noReExportAll": "off" }
+    }
+  },
+  "javascript": {
+    "globals": [
+      "afterEach",
+      "beforeEach",
+      "describe",
+      "expect",
+      "fetchMock",
+      "it",
+      "test"
+    ]
+  },
+  "overrides": [
+    {
+      "include": ["**/*.svelte"],
+      "linter": {
+        "rules": {
+          "correctness": {
+            "noUndeclaredVariables": "off",
+            "noUnusedImports": "off",
+            "noUnusedVariables": "off"
+          },
+          "style": {
+            "noRestrictedGlobals": "off",
+            "useConst": "off",
+            "useFilenamingConvention": "off"
+          },
+          "suspicious": {
+            "noGlobalAssign": "off"
+          }
+        }
+      }
+    },
+    {
+      "include": ["lint-staged.config.js", "vite.config.js"],
+      "linter": {
+        "rules": { "style": { "useFilenamingConvention": "off" } }
+      }
+    },
+    {
+      "include": ["**/*.test.ts"],
+      "linter": {
+        "rules": { "style": { "useFilenamingConvention": "off" } }
+      }
+    }
+  ]
+}

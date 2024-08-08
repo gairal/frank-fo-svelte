@@ -1,4 +1,3 @@
-// eslint-disable-next-line import/no-unresolved
 import { registerSW } from "virtual:pwa-register";
 
 import App from "./App.svelte";
@@ -10,4 +9,5 @@ registerSW();
 // @ts-expect-error adding initMap onto the window
 window.initMap = () => isMapReady.set(true);
 
+// biome-ignore lint/style/noDefaultExport: exception
 export default new App({ target: document.body });

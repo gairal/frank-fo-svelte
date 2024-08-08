@@ -1,42 +1,44 @@
 <script lang="ts">
-  import { intlFormat } from "date-fns";
-  import { expoInOut as easing } from "svelte/easing";
-  import { slide } from "svelte/transition";
+import { intlFormat } from "date-fns";
+import { expoInOut as easing } from "svelte/easing";
+import { slide } from "svelte/transition";
 
-  import { BUCKET_URL } from "../constants";
-  import Card from "./Card.svelte";
-  import H2 from "./H2.svelte";
-  import FoldIcon from "./icons/FoldIcon.svelte";
-  import UnfoldIcon from "./icons/UnfoldIcon.svelte";
+import { BUCKET_URL } from "../constants";
+import Card from "./Card.svelte";
+import H2 from "./H2.svelte";
+import FoldIcon from "./icons/FoldIcon.svelte";
+import UnfoldIcon from "./icons/UnfoldIcon.svelte";
 
-  export let dateIn: string;
-  export let dateOut = "";
-  export let headline: string;
-  export let img: string;
-  export let name: string;
-  export let place: string;
-  export let title: string;
+export let dateIn: string;
+export let dateOut = "";
+export let headline: string;
+export let img: string;
+export let name: string;
+export let place: string;
+export let title: string;
 
-  let inDate: string;
-  $: inDate = intlFormat(new Date(dateIn), {
-    month: "numeric",
-    year: "numeric",
-  });
+let inDate: string;
+$: inDate = intlFormat(new Date(dateIn), {
+  month: "numeric",
+  year: "numeric",
+});
 
-  let outDate: string;
-  $: {
-    if (dateOut) {
-      outDate = intlFormat(new Date(dateOut), {
-        month: "numeric",
-        year: "numeric",
-      });
-    } else outDate = "current";
+let outDate: string;
+$: {
+  if (dateOut) {
+    outDate = intlFormat(new Date(dateOut), {
+      month: "numeric",
+      year: "numeric",
+    });
+  } else {
+    outDate = "current";
   }
+}
 
-  let expanded = false;
-  const handleClick = () => {
-    expanded = !expanded;
-  };
+let expanded = false;
+const handleClick = () => {
+  expanded = !expanded;
+};
 </script>
 
 <Card class="mb-2 sm:mb-4 w-full hover:bg-pink-500 transition-colors">
