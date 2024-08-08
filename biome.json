@@ -13,13 +13,9 @@
     "enabled": true,
     "rules": {
       "all": true,
-      "correctness": { "noNodejsModules": "off" },
       "nursery": {
-        "all": true,
-        "useImportExtensions": "off",
-        "useImportRestrictions": "off"
-      },
-      "performance": { "noBarrelFile": "off", "noReExportAll": "off" }
+        "all": true
+      }
     }
   },
   "javascript": {
