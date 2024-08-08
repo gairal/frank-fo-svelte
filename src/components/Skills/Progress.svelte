@@ -4,7 +4,6 @@ import { quartOut as easing } from "svelte/easing";
 export let level: number;
 
 const expand = (
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   node: Element,
   { duration, width }: { duration: number; width: number },
 ) => ({

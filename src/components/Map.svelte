@@ -27,7 +27,7 @@ const travel = (index = 0) => {
     lat: coordinates.latitude,
     lng: coordinates.longitude,
   });
-  // eslint-disable-next-line no-new
+
   new google.maps.Marker({
     animation: google.maps.Animation.DROP,
     map,

@@ -29,7 +29,7 @@ bun start
 
 - `bun run build`: bundles the app for production
 - `bun dev`: launches a vite watcher
-- `bun lint`: lints the whole sources and tests with eslint
+- `bun lint`: lints the whole sources and tests with biome
 - `bun start`: runs the project in production mode
 - `bun test-cov`: runs Jest tests with coverage
 - `bun run test`: runs Jest tests
