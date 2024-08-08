@@ -68,7 +68,7 @@ export default defineConfig({
       include: ["src/**"],
       exclude: ["src/**/*.d.ts"],
     },
-    environment: "happy-dom",
+    environment: "jsdom",
     include: ["src/**/*.test.ts"],
     setupFiles: ["./test/setup.ts"],
   },
