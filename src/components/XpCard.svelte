@@ -30,7 +30,9 @@ $: {
       month: "numeric",
       year: "numeric",
     });
-  } else outDate = "current";
+  } else {
+    outDate = "current";
+  }
 }
 
 let expanded = false;

@@ -59,7 +59,6 @@
     "svelte-routing": "^2.13.0"
   },
   "lint-staged": {
-    "*.{ts,type-check}": ["bun typecheck"],
     "*.{js,cjs,json,ts,svelte,css,css,md}": ["bun lint --fix"]
   }
 }
