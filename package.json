@@ -45,7 +45,7 @@
     "vite-plugin-pwa": "^0.20.1"
   },
   "dependencies": {
-    "@beyonk/gdpr-cookie-consent-banner": "^9.1.1",
+    "@beyonk/gdpr-cookie-consent-banner": "^12.1.4",
     "date-fns": "^3.6.0",
     "svelte": "^4.2.18",
     "svelte-click-outside": "^1.0.0",
