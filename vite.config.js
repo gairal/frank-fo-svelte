@@ -7,7 +7,15 @@ import { VitePWA } from "vite-plugin-pwa";
 // biome-ignore lint/style/noDefaultExport: exception
 export default defineConfig({
   plugins: [
-    svelte(),
+    svelte({
+      onwarn: (warning, handler) => {
+        if (warning.code === "css-unused-selector") {
+          return;
+        }
+
+        handler(warning);
+      },
+    }),
     svelteTesting(),
     VitePWA({
       devOptions: { enabled: process.env.NODE_ENV !== "production" },
