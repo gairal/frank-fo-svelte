@@ -24,12 +24,13 @@
   },
   "javascript": {
     "globals": [
-      "afterAll",
-      "beforeAll",
+      "afterEach",
+      "beforeEach",
       "describe",
       "expect",
+      "fetchMock",
       "it",
-      "fetchMock"
+      "test"
     ]
   },
   "overrides": [

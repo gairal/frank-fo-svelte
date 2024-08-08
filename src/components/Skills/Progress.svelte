@@ -4,8 +4,7 @@ import { quartOut as easing } from "svelte/easing";
 export let level: number;
 
 const expand = (
-  // biome-ignore lint/nursery/noUnusedFunctionParameters: exception
-  node: Element,
+  _node: Element,
   { duration, width }: { duration: number; width: number },
 ) => ({
   css: (t: number) => `width: ${width * t}%;`,

@@ -4,7 +4,7 @@ import { svelteTesting } from "@testing-library/svelte/vite";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
 
-// biome-ignore lint/style/noDefaultExport: <explanation>
+// biome-ignore lint/style/noDefaultExport: exception
 export default defineConfig({
   plugins: [
     svelte(),
@@ -19,7 +19,7 @@ export default defineConfig({
         "img/*.png",
       ],
       manifest: {
-        // biome-ignore lint/style/useNamingConvention: <explanation>
+        // biome-ignore lint/style/useNamingConvention: exception
         background_color: "#fff",
         description:
           "Frank Gairal online C.V. looking for a position full-stack engineer in Paris",
@@ -42,14 +42,14 @@ export default defineConfig({
             type: "image/png",
           },
         ],
-        // biome-ignore lint/style/useNamingConvention: <explanation>
+        // biome-ignore lint/style/useNamingConvention: exception
         manifest_version: 2,
         name: "Frank Gairal",
-        // biome-ignore lint/style/useNamingConvention: <explanation>
+        // biome-ignore lint/style/useNamingConvention: exception
         short_name: "frank g.",
-        // biome-ignore lint/style/useNamingConvention: <explanation>
+        // biome-ignore lint/style/useNamingConvention: exception
         start_url: "https://frank.gairal.rocks/",
-        // biome-ignore lint/style/useNamingConvention: <explanation>
+        // biome-ignore lint/style/useNamingConvention: exception
         theme_color: "#581c87",
         version: "5.0.0",
       },

@@ -10,7 +10,7 @@ onMount(() => {
     backgroundColor: "#5271ff",
     center: { lat: 48.856149, lng: 2.3386383 },
     clickableIcons: false,
-    // biome-ignore lint/style/useNamingConvention: <explanation>
+    // biome-ignore lint/style/useNamingConvention: exception
     disableDefaultUI: true,
     gestureHandling: "none",
     mapId: "2c0abd81847fd58d",
