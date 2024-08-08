@@ -9,14 +9,18 @@ const fixture = worksFixture();
 const firstResult = fixture[0];
 const achievement = firstResult.achievements[0].description;
 
-const subject = () => render(Work);
+const subject = () => {
+  const user = userEvent.setup();
+  render(Work);
+  return user;
+};
 
 beforeEach(() => {
   fetchMock.mockOnce(JSON.stringify(fixture));
 });
 
 test("displays work cards", async () => {
-  subject();
+  const user = subject();
 
   // loader is displayed until we get results
   await screen.findByRole("alert");
@@ -34,7 +38,7 @@ test("displays work cards", async () => {
   expect(cards).toHaveLength(fixture.length);
   expect(await screen.findAllByRole("img")).toHaveLength(fixture.length);
 
-  userEvent.click(cards[0]);
+  await user.click(cards[0]);
 
   // card is opened
   await screen.findByText(achievement);

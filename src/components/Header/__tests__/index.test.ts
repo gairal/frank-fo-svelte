@@ -3,12 +3,16 @@ import userEvent from "@testing-library/user-event";
 
 import Header from "../index.svelte";
 
-const subject = () => render(Header);
+const subject = () => {
+  const user = userEvent.setup();
+  render(Header);
+  return user;
+};
 
 test("can open the navigation menu", async () => {
-  subject();
+  const user = subject();
 
-  userEvent.click(await screen.findByRole("button", { name: "menu" }));
+  await user.click(await screen.findByRole("button", { name: "menu" }));
 
   await waitFor(() =>
     expect(screen.getAllByRole("link", { name: "Work" })).toHaveLength(2)
@@ -20,9 +24,9 @@ test("can open the navigation menu", async () => {
 });
 
 test("can open the more menu", async () => {
-  subject();
+  const user = subject();
 
-  userEvent.click(await screen.findByRole("button", { name: "more" }));
+  await user.click(await screen.findByRole("button", { name: "more" }));
 
   await screen.findByRole("link", { name: "frank@gairal.com" });
   await screen.findByRole("link", { name: "LinkedIn" });
