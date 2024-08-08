@@ -17,6 +17,6 @@ jobs:
         with:
           bun-version: latest
       - run: bun install --frozen-lockfile
-      - run: bun lint
+      - run: bun biome ci --diagnostic-level=error
       - run: bun run build
       - run: bun run test
