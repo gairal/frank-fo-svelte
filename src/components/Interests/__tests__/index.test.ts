@@ -1,9 +1,9 @@
 import { render, screen } from "@testing-library/svelte";
 import fetchMock from "jest-fetch-mock";
 
-import Interests from "../index.svelte";
 import { interestsFixture } from "../../../../test/fixtures/interest";
 import { travelsFixture } from "../../../../test/fixtures/travel";
+import Interests from "../index.svelte";
 
 const interests = interestsFixture();
 const travels = travelsFixture();

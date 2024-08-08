@@ -1,5 +1,5 @@
 <script lang="ts">
-import { link, Router } from "svelte-routing";
+import { Router, link } from "svelte-routing";
 
 import { title } from "../../stores/appStore";
 import Menu from "./Menu.svelte";

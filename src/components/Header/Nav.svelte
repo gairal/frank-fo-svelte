@@ -1,6 +1,6 @@
 <script lang="ts">
-import { slide } from "svelte/transition";
 import { quintInOut as easing } from "svelte/easing";
+import { slide } from "svelte/transition";
 
 import Link from "./Link.svelte";
 

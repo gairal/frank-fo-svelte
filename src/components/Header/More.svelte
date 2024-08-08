@@ -1,6 +1,6 @@
 <script lang="ts">
-import { fade } from "svelte/transition";
 import ClickOutside from "svelte-click-outside/src/index.svelte";
+import { fade } from "svelte/transition";
 
 import { BUCKET_URL } from "../../constants";
 import BuildIcon from "../icons/BuildIcon.svelte";
@@ -11,7 +11,7 @@ import MoreIcon from "../icons/MoreIcon.svelte";
 import ResumeIcon from "../icons/ResumeIcon.svelte";
 
 let showMore = false;
-let button;
+let button: HTMLButtonElement;
 
 const toggleMore = () => {
   showMore = !showMore;

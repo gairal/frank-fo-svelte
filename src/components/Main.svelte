@@ -4,8 +4,8 @@ import { Route, Router } from "svelte-routing";
 import Education from "./Education/index.svelte";
 import Interests from "./Interests/index.svelte";
 import Skills from "./Skills/index.svelte";
-import Work from "./Work/index.svelte";
 import Sunset from "./Sunset.svelte";
+import Work from "./Work/index.svelte";
 </script>
 
 <main
