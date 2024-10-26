@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/svelte";
 import userEvent from "@testing-library/user-event";
 import { test, vi } from "vitest";
 
+import { fetchMock } from "../../test/fetch";
 import App from "../App.svelte";
 
 const subject = async () => {

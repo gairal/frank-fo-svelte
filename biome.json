@@ -19,11 +19,11 @@
         "useImportExtensions": "off",
         "useImportRestrictions": "off"
       },
-      "performance": { "noBarrelFile": "off", "noReExportAll": "off" }
+      "performance": {
+        "noBarrelFile": "off",
+        "noReExportAll": "off"
+      }
     }
-  },
-  "javascript": {
-    "globals": ["fetchMock"]
   },
   "overrides": [
     {
@@ -49,13 +49,21 @@
     {
       "include": ["lint-staged.config.js", "vite.config.js"],
       "linter": {
-        "rules": { "style": { "useFilenamingConvention": "off" } }
+        "rules": {
+          "style": {
+            "useFilenamingConvention": "off"
+          }
+        }
       }
     },
     {
       "include": ["**/*.test.ts"],
       "linter": {
-        "rules": { "style": { "useFilenamingConvention": "off" } }
+        "rules": {
+          "style": {
+            "useFilenamingConvention": "off"
+          }
+        }
       }
     }
   ]

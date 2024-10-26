@@ -2,6 +2,7 @@ import { render, screen } from "@testing-library/svelte";
 import userEvent from "@testing-library/user-event";
 import { beforeEach, expect, test } from "vitest";
 
+import { fetchMock } from "../../../../test/fetch";
 import { worksFixture } from "../../../../test/fixtures/work";
 import Work from "../index.svelte";
 
