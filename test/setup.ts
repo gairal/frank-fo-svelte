@@ -3,8 +3,9 @@ import "@testing-library/jest-dom/vitest";
 import { afterEach, vi } from "vitest";
 import createFetchMock from "vitest-fetch-mock";
 
-createFetchMock(vi).enableMocks();
+const fetchMocker = createFetchMock(vi);
+fetchMocker.enableMocks();
 
 afterEach(() => {
-  fetchMock.mockClear();
+  fetchMocker.mockClear();
 });

@@ -41,7 +41,7 @@
     "typescript": "^5.5.4",
     "vite": "^5.4.3",
     "vitest": "^2.0.5",
-    "vitest-fetch-mock": "^0.3.0",
+    "vitest-fetch-mock": "^0.4.0",
     "vite-plugin-pwa": "^0.20.5"
   },
   "dependencies": {
