@@ -30,7 +30,7 @@
     "@types/gtag.js": "^0.0.20",
     "autoprefixer": "^10.4.20",
     "husky": "^9.1.5",
-    "jsdom": "^25.0.0",
+    "jsdom": "^26.0.0",
     "lint-staged": "^15.2.10",
     "npm": "^11.0.0",
     "postcss": "^8.4.45",
